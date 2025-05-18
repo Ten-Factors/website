@@ -4,10 +4,11 @@ function App() {
   return (
     <div className="App">
       <section className="hero">
+        <div className="hero-overlay"></div>
         <div className="hero-content">
           <div className="hero-text">
             <h1 className="hero-title">Ten-Factors</h1>
-            <h2 className="hero-subtitle">Community-Driven and Open-Source Standard for Measuring Software Quality</h2>
+            <h2 className="hero-subtitle">Community-Driven and Open-Source Standard for Measuring Any Software Quality</h2>
             <div className="hero-description">
               <p>
                 A practical and scalable framework for measuring and improving software quality 
@@ -19,11 +20,95 @@ function App() {
               It helps any team committed to delivering consistent, high-quality software services achieve their goals.
               </p>
             </div>
-            <button className="cta-button">Get Started</button>
+            <button className="hero-button">Get Started</button>
           </div>
-          <div className="hero-image">
-            {/* Background image will be added here */}
+          <div className="hero-image"></div>
+        </div>
+      </section>
+
+      <nav className="nav-menu">
+        <div className="nav-content">
+          <a href="#" className="nav-logo">Ten-Factors</a>
+          <div className="nav-links">
+            <a href="#" className="nav-link">Home</a>
+            <a href="#description" className="nav-link">Description</a>
+            <a href="#learning-hub" className="nav-link">Learning Hub</a>
+            <a href="#get-started" className="nav-link nav-link-primary">Get Started</a>
           </div>
+        </div>
+      </nav>
+
+      <section className="section section-contributors">
+        <div className="section-content">
+          <h2 className="section-title">Contributors</h2>
+          <p className="section-subtitle">
+            Ten-Factors is an open-source project which is maintained by community. We grateful for all people who contributed to this project.
+          </p>
+          <ul className="contributors-list">
+            <li className="contributor-item">
+              <div className="contributor-avatar">
+                <img src="https://github.com/itspoma.png" alt="Roman Rodomansky" />
+              </div>
+              <div className="contributor-info">
+                <a href="https://github.com/itspoma" className="contributor-name" target="_blank" rel="nofollow noopener noreferrer">Roman Rodomansky</a>
+                <p className="contributor-role">Co-Founder of <a className="link" href="https://ralabs.org/cases/" target="_blank">Ralabs</a></p>
+              </div>
+            </li>
+            <li className="contributor-item">
+              <div className="contributor-avatar">
+                <img src="https://github.com/david-smith.png" alt="Yuriy Sapronov" />
+              </div>
+              <div className="contributor-info">
+                <a href="https://github.com/Yuriy-Sapronov" className="contributor-name" target="_blank" rel="nofollow noopener noreferrer">Yuriy Sapronov</a>
+                <p className="contributor-role">Developer</p>
+              </div>
+            </li>
+            <li className="contributor-item">
+              <div className="contributor-avatar">
+                <img src="https://github.com/sarah-chen.png" alt="Sarah Chen" />
+              </div>
+              <div className="contributor-info">
+                <a href="https://github.com/sarah-chen" className="contributor-name" target="_blank" rel="nofollow noopener noreferrer">Sarah Chen</a>
+                <p className="contributor-role">Quality Assurance Lead</p>
+              </div>
+            </li>
+            <li className="contributor-item">
+              <div className="contributor-avatar">
+                <img src="https://github.com/alex-kumar.png" alt="Alex Kumar" />
+              </div>
+              <div className="contributor-info">
+                <a href="https://github.com/alex-kumar" className="contributor-name" target="_blank" rel="nofollow noopener noreferrer">Alex Kumar</a>
+                <p className="contributor-role">Documentation & Community</p>
+              </div>
+            </li>
+            <li className="contributor-item">
+              <div className="contributor-avatar">
+                <img src="https://github.com/maria-rodriguez.png" alt="Maria Rodriguez" />
+              </div>
+              <div className="contributor-info">
+                <a href="https://github.com/maria-rodriguez" className="contributor-name" target="_blank" rel="nofollow noopener noreferrer">Maria Rodriguez</a>
+                <p className="contributor-role">DevOps Engineer</p>
+              </div>
+            </li>
+            <li className="contributor-item">
+              <div className="contributor-avatar">
+                <img src="https://github.com/david-smith.png" alt="David Smith" />
+              </div>
+              <div className="contributor-info">
+                <a href="https://github.com/david-smith" className="contributor-name" target="_blank" rel="nofollow noopener noreferrer">David Smith</a>
+                <p className="contributor-role">Frontend Developer</p>
+              </div>
+            </li>
+            <li className="contributor-item">
+              <div className="contributor-avatar">
+                <img src="https://github.com/emily-zhang.png" alt="Emily Zhang" />
+              </div>
+              <div className="contributor-info">
+                <a href="https://github.com/emily-zhang" className="contributor-name" target="_blank" rel="nofollow noopener noreferrer">Emily Zhang</a>
+                <p className="contributor-role">Backend Developer</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -85,10 +170,53 @@ function App() {
         </div>
       </section>
 
+      <section className="section">
+        <div className="section-content">
+          <h2 className="section-title">Who should use Ten-Factors?</h2>
+          <p className="section-subtitle">
+            Ten-Factors is designed for everyone who cares about delivering high-quality software. Whether you're leading the company, managing projects, or writing code, Ten-Factors gives you clear, actionable insights.
+          </p>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="section-content">
+          <h2 className="section-title">Why Ten-Factors Approach is Better Existed Solutions?</h2>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="section-content">
+          <h2 className="section-title">How Ten-Factor works?</h2>
+          <p className="section-subtitle">
+          Ten-Factors is designed to provide a clear, practical, and scalable approach to quality control in software development. Our approach combines automated metrics with direct team feedback, creating a complete and accurate view of service quality.
+          </p>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="section-content">
+          <h2 className="section-title">The Ten Key Areas We Measure</h2>
+          <img width="100%" src="ten-factors-website/header-factors.svg" alt="Ten Factors Illustration" />
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="section-content">
+          <h2 className="section-title">How to Get Started with Ten-Factors</h2>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="section-content">
+          <h2 className="section-title">Frequently Asked Questions (FAQ)</h2>
+        </div>
+      </section>
+
       <section className="license">
         <div className="section-content">
           <p className="license-note">
-            Ten-Factors is distributed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="nofollow noopener noreferrer">Creative Commons License</a>.
+            Ten-Factors is distributed under <a className="link" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="nofollow noopener noreferrer">Creative Commons License</a>.
           </p>
         </div>
       </section>
