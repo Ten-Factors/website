@@ -1,61 +1,189 @@
 .App {
-  text-align: center;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #14141b;
 }
 
+/* Hero Section */
 .hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  background-color: #ffffff;
+  padding: 4rem 2rem;
+  /* background: linear-gradient(135deg, #00c6ff 0%, #0072ff 50%, #7b2ff7 100%); */
+  background-color: #eeeff1;
+  color: #000;
 }
 
 .hero-content {
   max-width: 1200px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.hero-text {
+  text-align: left;
+  max-width: 70%;
+}
+
+.hero-image {
+  width: 30%;
+  /* Background image styles will be added here */
 }
 
 .hero-title {
-  font-size: 5rem;
-  font-weight: 600;
-  line-height: .95;
-  margin-bottom: 1rem;
-  background: linear-gradient(135deg, #00c6ff 0%, #0072ff 50%, #7b2ff7 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
+  font-size: 2.5rem;
   font-weight: bold;
   font-family: "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: .95;
+  margin-bottom: 1rem;
 }
 
 .hero-subtitle {
-  font-size: 3.5rem;
-  font-weight: 600;
-  line-height: 1.05;
-  margin-top: 0rem;
+  font-size: 2rem;
+  font-weight: bold;
   font-family: "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 2rem;
 }
 
 .hero-description {
   font-size: 1.125rem;
   line-height: 1.5;
+  margin-bottom: 2rem;
 }
 
-.hero-description p {
+.cta-button {
+  background: linear-gradient(135deg, rgb(44,82,159) 0%, #1D53A5 50%, rgb(87,167,135) 100%);
+  color: white;
+  border: none;
+  padding: 0.9rem 1.7rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-size: 200% auto;
+  background-position: right center;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+}
+
+/* Costs Section */
+.section-costs {
+  background-color: #fff;
+}
+
+.costs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.cost-column-title {
+  font-size: 1.5rem;
+  font-weight: 600;
   margin-bottom: 1.5rem;
+  color: #14141b;
+}
+
+.cost-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cost-item {
+  background: #f1f3f6;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.cost-item h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: #14141b;
+}
+
+.cost-item p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #4a4a4a;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .costs-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Case Studies Section */
+.section {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+}
+
+.section-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #14141b;
+}
+
+.section-subtitle {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+/* License Section */
+.license {
+  padding: 2rem;
+  background-color: #ffffff;
 }
 
 .license-note {
   font-size: 1rem;
   color: #666;
-  margin-top: 2rem;
+  text-align: center;
 }
 
 .license-note a {
   color: inherit;
   text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .hero-content {
+    flex-direction: column;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .hero-image {
+    width: 100%;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .hero-subtitle {
+    font-size: 2rem;
+  }
 }
