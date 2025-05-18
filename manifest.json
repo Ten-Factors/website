@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Ten-Factors",
+  "name": "Ten-Factors – Open-Source Standard for Measuring Software Quality",
   "icons": [
     {
       "src": "favicon.ico",
