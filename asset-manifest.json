@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ten-factors-website/static/css/main.032d7e73.css",
-    "main.js": "/ten-factors-website/static/js/main.835e1a81.js",
+    "main.css": "/ten-factors-website/static/css/main.036ef051.css",
+    "main.js": "/ten-factors-website/static/js/main.581d7322.js",
     "static/js/453.6a7f43db.chunk.js": "/ten-factors-website/static/js/453.6a7f43db.chunk.js",
     "index.html": "/ten-factors-website/index.html",
-    "main.032d7e73.css.map": "/ten-factors-website/static/css/main.032d7e73.css.map",
-    "main.835e1a81.js.map": "/ten-factors-website/static/js/main.835e1a81.js.map",
+    "main.036ef051.css.map": "/ten-factors-website/static/css/main.036ef051.css.map",
+    "main.581d7322.js.map": "/ten-factors-website/static/js/main.581d7322.js.map",
     "453.6a7f43db.chunk.js.map": "/ten-factors-website/static/js/453.6a7f43db.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.032d7e73.css",
-    "static/js/main.835e1a81.js"
+    "static/css/main.036ef051.css",
+    "static/js/main.581d7322.js"
   ]
 }
