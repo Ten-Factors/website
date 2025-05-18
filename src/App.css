@@ -1,38 +1,61 @@
 .App {
   text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #14141b;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.hero {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 2rem;
+  background-color: #ffffff;
 }
 
-.App-link {
-  color: #61dafb;
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hero-title {
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: .95;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #00c6ff 0%, #0072ff 50%, #7b2ff7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  font-family: "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.hero-subtitle {
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.05;
+  margin-top: 0rem;
+  font-family: "Helvetica Neue Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.hero-description {
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.hero-description p {
+  margin-bottom: 1.5rem;
+}
+
+.license-note {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 2rem;
+}
+
+.license-note a {
+  color: inherit;
+  text-decoration: underline;
 }
