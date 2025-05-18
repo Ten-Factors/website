@@ -41,7 +41,7 @@ a.link:hover {
   font-weight: 600;
   color: #14141b;
   text-decoration: none;
-  background: linear-gradient(135deg, #2196F3 0%, #1E88E5 50%, #4a6981 100%) text;
+  background: linear-gradient(135deg, #4a6981 0%, #1E88E5 50%, #4a6981 100%) text;
   -webkit-text-fill-color: rgba(0, 0, 0, 0);
 }
 
@@ -77,7 +77,7 @@ a.link:hover {
   position: relative;
   overflow: hidden;
   color: #fff;
-  background: linear-gradient(135deg, #2196F3 0%, #1E88E5 50%, #1B1B1B 100%);
+  background: linear-gradient(135deg, #1B1B1B 0%, #1E88E5 50%, #1B1B1B 100%);
 }
 
 .hero-content {
@@ -271,7 +271,7 @@ a.link:hover {
   margin-top: 0;
   margin-bottom: 0;
   color: #14141b;
-  background: linear-gradient(135deg, #2196F3 0%, #1E88E5 50%, #4a6981 100%) text;
+  background: linear-gradient(135deg, #4a6981 0%, #1E88E5 50%, #4a6981 100%) text;
   -webkit-text-fill-color: rgba(0, 0, 0, 0);
   display: inline-block;
 }
@@ -341,39 +341,4 @@ a.link:hover {
   .hero-subtitle {
     font-size: 2rem;
   }
-}
-
-:root {
-  --first-glow: conic-gradient(
-    from 0deg at 50% 50%,
-    #2196F3 0deg,
-    #1E88E5 90deg,
-    #1B1B1B 180deg,
-    #2196F3 270deg,
-    transparent 360deg
-  );
-  --second-glow: conic-gradient(
-    from 45deg at 50% 50%,
-    #1E88E5 0deg,
-    #1B1B1B 90deg,
-    #2196F3 180deg,
-    #1E88E5 270deg,
-    transparent 360deg
-  );
-  --third-glow: conic-gradient(
-    from 90deg at 50% 50%,
-    #1B1B1B 0deg,
-    #2196F3 90deg,
-    #1E88E5 180deg,
-    #1B1B1B 270deg,
-    transparent 360deg
-  );
-  --fourth-glow: conic-gradient(
-    from 135deg at 50% 50%,
-    #2196F3 0deg,
-    #1B1B1B 90deg,
-    #1E88E5 180deg,
-    #2196F3 270deg,
-    transparent 360deg
-  );
 }
