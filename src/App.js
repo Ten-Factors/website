@@ -32,7 +32,7 @@ function App() {
           <div className="nav-links">
             <a href="#" className="nav-link">Home</a>
             <a href="#description" className="nav-link">Description</a>
-            <a href="#learning-hub" className="nav-link">Learning Hub</a>
+            <a href="#learning-hub" className="nav-link">Engineering Checklist</a>
             <a href="#get-started" className="nav-link nav-link-primary">Get Started</a>
           </div>
         </div>
