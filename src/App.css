@@ -24,7 +24,6 @@ a.link:hover {
   backdrop-filter: blur(8px);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-  margin-top: -1px;
 }
 
 .nav-content {
@@ -55,20 +54,25 @@ a.link:hover {
   color: #4a4a4a;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.2s ease;
+  /* transition: color 0.2s ease; */
+  transition: all 0.2s ease;
 }
 
 .nav-link:hover {
-  color: #2196F3;
+  color: #000;
+  transform: translateY(-1px);
 }
 
-.nav-link-primary {
+.nav-link-get-started,
+.nav-link-get-started.nav-link-primary {
   color: #2196F3;
   font-weight: 600;
 }
 
-.nav-link-primary:hover {
-  color: #1E88E5;
+.nav-link-primary {
+  font-weight: 600;
+  color: #000;
+  transform: translateY(-1px);
 }
 
 /* Hero Section */
@@ -294,10 +298,85 @@ a.link:hover {
   text-align: center;
 }
 
+/* Read Further Section */
+.section-read-further {
+  background: linear-gradient(135deg, #1B1B1B 0%, #1E88E5 80%, #1B1B1B 100%);
+  color: #fff;
+  padding: 4rem 2rem;
+}
+
+.section-read-further .section-title {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, #ffffff 0%, #bcd5eb 50%, #f0f0f0 100%) text;
+}
+
+.read-further-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.read-further-link {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 8px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.read-further-link:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-4px);
+}
+
+.read-further-link h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.read-further-link p {
+  margin: 0;
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+/* Footer */
+.footer {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-top: 1px solid #eaeaea;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer .copyright {
+  margin: 0 0 1rem 0;
+  color: #666;
+}
+
+.footer .license-note {
+  margin: 0;
+  color: #666;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .nav-menu {
     position: sticky;
+  }
+
+  .read-further-links {
+    grid-template-columns: 1fr;
   }
 
   .nav-content {
