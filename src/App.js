@@ -9,8 +9,11 @@ import GetStarted from './pages/GetStarted';
 import Footer from './components/Footer';
 
 function App() {
+  // Get the base URL from the environment or default to '/ten-factors-website' for GitHub Pages
+  const basename = process.env.PUBLIC_URL || '/ten-factors-website';
+
   return (
-    <Router>
+    <Router basename={basename}>
       <div className="App">
         <Routes>
           <Route path="/" element={<Home />} />
