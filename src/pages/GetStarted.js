@@ -10,7 +10,7 @@ function GetStarted() {
         <div className="hero-overlay"></div>
         <div className="hero-content">
           <div className="hero-text">
-            <h1 className="hero-title">A Step-by-Step Guide for Onboarding to Ten-Factors</h1>
+            <h1 className="hero-title">Easy onboarding to Ten-Factors</h1>
           </div>
         </div>
       </section>
@@ -21,6 +21,13 @@ function GetStarted() {
           <p className="section-subtitle">
             Follow these steps to implement Ten-Factors in your organization
           </p>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="section-content">
+          <h2 className="section-title">The ten key areas we measure</h2>
+          <img width="100%" src="header-factors.svg" alt="Ten Factors Illustration" />
         </div>
       </section>
     </div>

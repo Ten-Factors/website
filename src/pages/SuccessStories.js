@@ -1,7 +1,7 @@
 import React from 'react';
 import Navigation from '../components/Navigation';
 
-function Process() {
+function SuccessStories() {
   return (
     <div className="page">
       <Navigation />
@@ -10,20 +10,18 @@ function Process() {
         <div className="hero-overlay"></div>
         <div className="hero-content">
           <div className="hero-text">
-            <h1 className="hero-title">Ten-Factors Process & Methodology Explanation</h1>
+            <h1 className="hero-title">How teams use Ten-Factors</h1>
           </div>
         </div>
       </section>
 
       <section className="section">
         <div className="section-content">
-          <h2 className="section-title">The Ten Key Areas We Measure</h2>
-          <img width="100%" src="ten-factors-website/header-factors.svg" alt="Ten Factors Illustration" />
+          <h2 className="section-title">Success Stories</h2>
         </div>
       </section>
-
     </div>
   );
 }
 
-export default Process;
+export default SuccessStories;

@@ -10,14 +10,14 @@ function Advantages() {
         <div className="hero-overlay"></div>
         <div className="hero-content">
           <div className="hero-text">
-            <h1 className="hero-title">Comparing the benefits of Ten-Factors with alternative solutions</h1>
+            <h1 className="hero-title">What makes Ten-Factors special</h1>
           </div>
         </div>
       </section>
 
       <section className="section section-costs">
         <div className="section-content">
-          <h2 className="section-title">How Much Software Quality Costs?</h2>
+          <h2 className="section-title">How much software quality costs?</h2>
           <div className="costs-grid">
             <div className="cost-column">
               <h3 className="cost-column-title">For Products/Startups</h3>

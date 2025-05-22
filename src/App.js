@@ -1,12 +1,22 @@
+import React, { useEffect } from 'react';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Home from './pages/Home';
 import Advantages from './pages/Advantages';
-import Process from './pages/Process';
 import BestPractices from './pages/BestPractices';
-import UseCases from './pages/UseCases';
+import SuccessStories from './pages/SuccessStories';
 import GetStarted from './pages/GetStarted';
 import Footer from './components/Footer';
+
+function ScrollToTop() {
+  const location = useLocation();
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+  
+  return null;
+}
 
 function App() {
   // Get the base URL from the environment or default to '/ten-factors-website' for GitHub Pages
@@ -15,12 +25,12 @@ function App() {
   return (
     <Router basename={basename}>
       <div className="App">
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/advantages" element={<Advantages />} />
-          <Route path="/process" element={<Process />} />
           <Route path="/best-practices" element={<BestPractices />} />
-          <Route path="/use-cases" element={<UseCases />} />
+          <Route path="/success-stories" element={<SuccessStories />} />
           <Route path="/get-started" element={<GetStarted />} />
         </Routes>
         <Footer />

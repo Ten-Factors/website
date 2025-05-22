@@ -4,13 +4,15 @@ import Navigation from '../components/Navigation';
 
 function Home() {
   return (
-    <>
+    <div className="home-page">
       <section className="hero">
         <div className="hero-overlay"></div>
         <div className="hero-content">
           <div className="hero-text">
-            <h1 className="hero-title">Ten-Factors</h1>
-            <h2 className="hero-subtitle">Community-Driven and Open-Source Standard for Measuring Any Software Quality</h2>
+            <h1 className="hero-title product-title">Ten-Factors</h1>
+            <h2 className="hero-subtitle">
+              Open-Source and Community-Driven Standard to Measure and Improve Software Quality
+            </h2>
             <div className="hero-description">
               <p>
                 A practical and scalable framework for measuring and improving software quality 
@@ -30,6 +32,51 @@ function Home() {
 
       <Navigation />
 
+      <section className="section">
+        <div className="section-content">
+          <h2 className="section-title">Usage process</h2>
+          <p className="section-subtitle">
+            Ten-Factors is designed to provide a clear, practical, and scalable approach to quality control in software development. Our approach combines automated metrics with direct team feedback, creating a complete and accurate view of service quality.
+          </p>
+          <div className="case-studies-content">
+            (stickers, e.g. 5 steps usage process)
+          </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="section-content">
+          <h2 className="section-title">Comparison with existed solutions</h2>
+          <p className="section-subtitle">
+            Community-driven; vs linearB, vs Own Standards;
+          </p>
+        </div>
+      </section>
+
+      <section className="section section-case-studies">
+        <div className="section-content">
+          <h2 className="section-title">Case Studies & Testimonials</h2>
+          <p className="section-subtitle">
+            Discover how Ten-Factors has transformed software quality for companies of different sizes and industries.
+          </p>
+          <div className="case-studies-content">
+            <Link to="/success-stories" className="cta-button">See More Cases</Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="section section-cta">
+        <div className="section-content">
+          <h2 className="section-title">Ready to try Ten-Factors?</h2>
+          <p className="section-subtitle">
+            Start measuring and improving your software quality today.
+          </p>
+          <div className="cta-buttons">
+            <Link to="/get-started" className="cta-button">Get Started Now</Link>
+          </div>
+        </div>
+      </section>
+
       <section className="section section-contributors">
         <div className="section-content">
           <h2 className="section-title">Contributors</h2>
@@ -46,61 +93,25 @@ function Home() {
                 <p className="contributor-role">Co-Founder at <a className="link" href="https://ralabs.org/cases/" target="_blank">Ralabs</a></p>
               </div>
             </li>
-            <li className="contributor-item">
-              <div className="contributor-avatar">
-                <img src="https://media.licdn.com/dms/image/v2/D4D03AQGAvj2d8__Eyg/profile-displayphoto-shrink_800_800/B4DZZDP1JLHwAg-/0/1744884945898?e=1753315200&v=beta&t=28k4h6HRBMLnwrl0eVgC2I8VPmTrTW0XuTpCaXHCkFI" alt="Daniel Niiaziiev" />
-              </div>
-              <div className="contributor-info">
-                <a href="https://www.linkedin.com/in/niiaziiev/" className="contributor-name" target="_blank" rel="nofollow noopener noreferrer">Daniel Niiaziiev</a>
-                <p className="contributor-role">Head of Engineering at <a className="link" href="https://ralabs.org/" target="_blank">Ralabs</a></p>
-              </div>
-            </li>
           </ul>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="section-content">
-          <h2 className="section-title">Comparison with Existed Solutions</h2>
-        </div>
-      </section>
-
-      <section className="section section-case-studies">
-        <div className="section-content">
-          <h2 className="section-title">Case Studies & Testimonials</h2>
-          <p className="section-subtitle">
-            Discover how Ten-Factors has transformed software quality for companies of different sizes and industries.
-          </p>
-          <div className="case-studies-content">
-            {/* Case studies content will go here */}
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="section-content">
-          <h2 className="section-title">Usage Process</h2>
-          <p className="section-subtitle">
-            Ten-Factors is designed to provide a clear, practical, and scalable approach to quality control in software development. Our approach combines automated metrics with direct team feedback, creating a complete and accurate view of service quality.
-          </p>
         </div>
       </section>
 
       <section className="section section-read-further">
         <div className="section-content">
-          <h2 className="section-title">Read Further</h2>
+          <h2 className="section-title">Read further</h2>
           <div className="read-further-links">
             <Link to="/advantages" className="read-further-link">
               <h3>Advantages</h3>
               <p>Discover how Ten-Factors different from existed solutions</p>
             </Link>
-            <Link to="/process" className="read-further-link">
-              <h3>Process</h3>
-              <p>Learn about our methodology and implementation</p>
+            <Link to="/success-stories" className="read-further-link">
+              <h3>Success Stories</h3>
+              <p>See how Ten-Factors can supercharge your software quality</p>
             </Link>
             <Link to="/best-practices" className="read-further-link">
-              <h3>Best Practices Hub</h3>
-              <p>Explore catalogue of practices and guidelines</p>
+              <h3>Library of Best Practices</h3>
+              <p>Explore catalogue of industry best practices and guidelines</p>
             </Link>
             <Link to="/get-started" className="read-further-link">
               <h3>Get Started</h3>
@@ -109,7 +120,7 @@ function Home() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 }
 
