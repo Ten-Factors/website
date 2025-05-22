@@ -38,6 +38,16 @@ function BestPractices() {
       setTimeout(() => {
         setAnimatingSections(prev => ({ ...prev, [sectionId]: false }));
       }, 300); // Match this with your animation duration
+
+      // Scroll to section header after a short delay to ensure DOM is updated
+      setTimeout(() => {
+        const sectionHeader = document.querySelector(`#section-${sectionId}`);
+        if (sectionHeader) {
+          const yOffset = -120; // Add padding on top
+          const yPosition = sectionHeader.getBoundingClientRect().top + window.pageYOffset + yOffset;
+          window.scrollTo({ top: yPosition, behavior: 'smooth' });
+        }
+      }, 50);
     }
 
     setExpandedSections(prev => ({
@@ -75,6 +85,7 @@ function BestPractices() {
       <section className={`section section-best-practices ${totalLinks == 0 ? 'section-hidden' : ''}`}>
         <div className="section-content">
           <div 
+            id={`section-${id}`}
             className="section-header" 
             onClick={() => toggleSection(id)}
           >
@@ -139,7 +150,7 @@ function BestPractices() {
       title: '01. Architecture',
       subsections: [
         {
-          title: 'App Design Principles',
+          title: 'Software Design Principles',
           links: [
             {
               url: 'https://12factor.net/',
@@ -152,10 +163,38 @@ function BestPractices() {
               "url": "https://www.browserstack.com/guide/native-app-vs-hybrid-app",
               "type": "Guide",
               "level": "1"
+            },
+            {
+              "title": "(Jul 2021) A Philosophy of Software Design (2nd Edition)",
+              "url": "https://www.amazon.com/Philosophy-Software-Design-2nd-ebook/dp/B09B8LFKQL/",
+              "type": "Book",
+              "level": "4"
+            },
+            {
+              "title": "(May 2016) Domain-Driven Design Distilled by Vaughn Vernon",
+              "url": "https://www.amazon.com/Domain-Driven-Design-Distilled-Vaughn-Vernon/dp/0134434420",
+              "type": "Book",
+              "level": "4"
+            },
+            {
+              "title": "(Dec 2024) Facilitating Software Architecture: Empowering Teams to Make Architectural Decisions by Andrew Harmel-Law",
+              "url": "https://www.amazon.com/Facilitating-Software-Architecture-Empowering-Architectural-ebook/dp/B0DMHGWCPN/",
+              "type": "Book",
+              "level": "4"
             }
           ]
         },
-        { title: 'System Design', links: [] },
+        {
+          title: 'System Design',
+          links: [
+            {
+              "title": "(Oct 2018) Practical TLA+: Planning Driven Development by Hillel Wayne",
+              "url": "https://www.amazon.com/Practical-TLA-Planning-Driven-Development/dp/1484238281",
+              "type": "Book",
+              "level": "4"
+            }
+          ]
+        },
         { title: 'Scalability & Load balancing', links: [] },
         { title: 'Cloud and Serverless', links: [] },
         { title: 'Local setup & Environment', links: [] },
@@ -167,6 +206,23 @@ function BestPractices() {
       id: 'infrastructure',
       title: '02. Infrastructure',
       subsections: [
+        {
+          title: 'Infrastructure planning', 
+          links: [
+            {
+              "title": "(May 2019) How to invest in technical infrastructure",
+              "url": "https://lethain.com/how-to-invest-technical-infrastructure/",
+              "type": "Article",
+              "level": "2"
+            },
+            {
+              "title": "(Dec 2018) Infrastructure planning: users, baselines and timeframes",
+              "url": "https://lethain.com/infrastructure-planning/",
+              "type": "Article",
+              "level": "3"
+            }
+          ]
+        },
         { title: 'CI/CD process maturity', links: [] },
         { title: 'Monitoring and alerting', links: [] },
         { title: 'Containerization', links: [] },
@@ -195,10 +251,28 @@ function BestPractices() {
           title: 'Refactoring, Code Quality & Technical Debt',
           links: [
             {
+              "url": "https://retool.com/blog/software-design-best-practices",
+              "title": "(Dec 2024) Fundamental software design practices to build flexible, scalable, and maintainable systems – including YAGNI, SOLID, and DRY principles.",
+              "type": "Article",
+              "level": "1"
+            },
+            {
               url: 'https://blog.crisp.se/2013/10/11/henrikkniberg/good-and-bad-technical-debt',
               title: '(Oct 2013) Henrik Kniberg explains when technical debt can be helpful for creativity and speed, and when it becomes a problem that slows teams down.',
               type: 'Article',
               level: '4'
+            },
+            {
+              "title": "(Nov 2023) Tidy First? A Personal Exercise in Empirical Software Design",
+              "url": "https://www.amazon.com/Tidy-First-Personal-Exercise-Empirical/dp/1098151240",
+              "type": "Book",
+              "level": "4"
+            },
+            {
+              "title": "(Apr 2018) Migrations: the sole scalable fix to tech debt",
+              "url": "https://lethain.com/migrations/",
+              "type": "Article",
+              "level": "3"
             }
           ]
         }
@@ -257,6 +331,17 @@ function BestPractices() {
       subsections: [
         { title: 'Test case coverage', links: [] },
         { title: 'Automated tests', links: [] },
+        {
+          "title": "Software Quality Strategy",
+          "links": [
+            {
+              "title": "(May 2025) How to create software quality",
+              "url": "https://lethain.com/quality/",
+              "type": "Article",
+              "level": "4"
+            }
+          ]
+        },
         {
           "title": "Test Strategy, and Methodologies",
           "links": [
@@ -359,7 +444,17 @@ function BestPractices() {
         { title: 'Requirements', links: [] },
         { title: 'Installation/setup guides', links: [] },
         { title: 'Code documentation', links: [] },
-        { title: 'Team onboarding materials', links: [] },
+        {
+          title: 'Onboarding',
+          links: [
+            {
+              "title": "(Mar 2022) The Ultimate Guide to Onboarding Software Engineers",
+              "url": "https://leadership.garden/onboarding-engineers/",
+              "type": "Guide",
+              "level": "2"
+            }
+          ]
+        },
         { title: 'Knowledge sharing rituals', links: [] },
         {
           title: 'Documentation Platforms',
@@ -428,7 +523,6 @@ function BestPractices() {
             }
           ]
         },
-        { title: 'Reports', links: [] },
         {
           title: 'Metrics & Performance',
           links: [
@@ -437,12 +531,47 @@ function BestPractices() {
               title: 'A research-backed book "Accelerate" that shows how top tech teams boost delivery speed, reliability, and business success using Lean practices.',
               type: 'Book',
               level: '5'
+            },
+            {
+              "title": "(Jan 2023) Measuring an engineering organization",
+              "url": "https://lethain.com/measuring-engineering-organizations/",
+              "type": "Article",
+              "level": "4"
+            },
+            {
+              "title": "(Jan 2019) Metrics for the unmeasurable",
+              "url": "https://lethain.com/metrics-for-the-unmeasurable/",
+              "type": "Article",
+              "level": "3"
+            },
+            {
+              "title": "(Dec 2024) Measuring developer experience, benchmarks, and providing a theory of improvement",
+              "url": "https://lethain.com/measuring-developer-experience-benchmarks-theory-of-improvement/",
+              "type": "Article",
+              "level": "4"
+            }
+          ]
+        },
+        {
+          title: 'Communication',
+          links: [
+            {
+              "title": "(May 2025) How to provide feedback on documents",
+              "url": "https://lethain.com/providing-feedback-on-writing/",
+              "type": "Article",
+              "level": "2"
             }
           ]
         },
         {
           title: 'Leadership & Team Growth, and Scaling',
           links: [
+            {
+              "title": "(Jul 2018) Sizing engineering teams",
+              "url": "https://lethain.com/sizing-engineering-teams/",
+              "type": "Article",
+              "level": "1"
+            },
             {
               url: 'https://zapier.com/engineering/startup-cto/',
               title: '(June 2017) A personal story from Zapier’s CTO on how his role evolved as the company grew, sharing lessons for tech leaders at startups.',
@@ -488,6 +617,30 @@ function BestPractices() {
             {
               "title": "(Jul 2017) 3x in 3 years: Scaling an Engineering Organization",
               "url": "https://www.pagerduty.com/blog/scaling-engineering-org/",
+              "type": "Article",
+              "level": "5"
+            },
+            {
+              "title": "(May 2024) Hardcore Software: Inside the Rise and Fall of the PC Revolution",
+              "url": "https://www.amazon.com/Hardcore-Software-Inside-Rise-Revolution-ebook/dp/B0CYBS9PFY",
+              "type": "Book",
+              "level": "4"
+            },
+            {
+              "title": "(Feb 2023) Writing an engineering strategy",
+              "url": "https://lethain.com/eng-strategies/",
+              "type": "Article",
+              "level": "5"
+            },
+            {
+              "title": "(Jan 2023) Setting engineering org values",
+              "url": "https://lethain.com/setting-engineering-org-values/",
+              "type": "Article",
+              "level": "5"
+            },
+            {
+              "title": "(Jan 2020) Your First 90 Days as CTO or VP Engineering",
+              "url": "https://lethain.com/first-ninety-days-cto-vpe/",
               "type": "Article",
               "level": "4"
             }
@@ -600,15 +753,84 @@ function BestPractices() {
               level: '2'
             }
           ]
+        },
+        {
+          title: 'Communication, and Presentation',
+          links: [
+            {
+              "title": "(Jan 2021) How to present to executives",
+              "url": "https://lethain.com/present-to-executives/",
+              "type": "Article",
+              "level": "3"
+            }
+          ]
         }
       ]
     },
     {
       id: 'design',
-      title: '09. Design',
+      title: '09. Design (UX/UI)',
       subsections: [
         { title: 'Accessibility', links: [] },
-        { title: 'Documented design flows', links: [] }
+        { title: 'Documented design flows', links: [] },
+        {
+          "title": "Design tools",
+          "links": [
+            {
+              "url": "https://lab.interface-design.co.uk/11-best-practices-for-planning-tool-ux-design-2b6f0e94d56c",
+              "title": "(Sep 2020) 11 simple UX tips to design better planning tools – from layout and interactions to visual hierarchy and data clarity.",
+              "type": "Article",
+              "level": "1"
+            }
+          ]
+        },
+        {
+          "title": "Design Principles",
+          "links": [
+            {
+              "url": "https://goodpractices.design/",
+              "title": "(Mar 2025) GoodPractices.Design – Learn everything you need to become a better designer standards, conventions and more.",
+              "type": "Guide",
+              "level": "2"
+            },
+            {
+              "url": "https://support.animaapp.com/en/articles/6300035-figma-best-practices",
+              "title": "(Jul 2023) Anima’s guide to Figma best practices – naming layers, using frames, components, and making designs responsive for better handoff to developers.",
+              "type": "Guide",
+              "level": "1"
+            },
+            {
+              "url": "https://www.figma.com/resource-library/web-design/",
+              "title": "(Mar 2024) Figma’s guide to web design fundamentals – covering layout, navigation, visual style, and responsive design with practical tips and examples.",
+              "type": "Guide",
+              "level": "1"
+            },
+            {
+              "url": "https://www.uxpin.com/studio/blog/guide-design-consistency-best-practices-ui-ux-designers/",
+              "title": "(Aug 2024) UXPin’s guide to 9 best practices for consistent UI/UX design – covering visual, functional, internal, and external consistency with practical tips.",
+              "type": "Guide",
+              "level": "1"
+            },
+            {
+              "url": "https://www.nngroup.com/articles/usability-101-introduction-to-usability/",
+              "title": "(Jan 2012) Jakob Nielsen explains usability basics – learnability, efficiency, memorability, errors, and satisfaction – and why they matter in design.",
+              "type": "Guide",
+              "level": "1"
+            },
+            {
+              "url": "https://www.hubble.team/blog/usability-testing-guide",
+              "title": "(May 2025) Hubble’s beginner-friendly guide to usability testing – covering planning, methods, and tools for better user experience.",
+              "type": "Guide",
+              "level": "1"
+            },
+            {
+              "url": "https://medium.com/design-bootcamp/the-ultimate-design-principles-guide-for-developers-d4aa58937283",
+              "title": "(Sep 2023) A comprehensive guide for developers to understand essential design principles – from visual design and UX to accessibility and collaboration.",
+              "type": "Guide",
+              "level": "1"
+            }
+          ]
+        }
       ]
     },
     {
@@ -616,9 +838,30 @@ function BestPractices() {
       title: '10. Team Satisfaction',
       subsections: [
         { title: 'Tooling satisfaction', links: [] },
-        { title: 'Team collaboration', links: [] },
         { title: 'Ownership mindset', links: [] },
         { title: 'Talent growth', links: [] },
+        {
+          title: 'Culture',
+          links: [
+            {
+              "title": "(Apr 2020) The Developer Culture Test – A modern framework to evaluate engineering environments",
+              "url": "https://blog.pragmaticengineer.com/the-developer-culture-test/",
+              "type": "Article",
+              "level": "2"
+            }
+          ]
+        },
+        {
+          "title": "Team collaboration",
+          "links": [
+            {
+              "title": "(Jun 2018) Staying on the path to high performing teams",
+              "url": "https://lethain.com/durably-excellent-teams/",
+              "type": "Article",
+              "level": "2"
+            }
+          ]
+        },
         {
           title: 'Collaboration & Mentorship',
           links: [

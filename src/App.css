@@ -129,21 +129,32 @@ a.link:hover {
 .filter-tag {
   display: inline-flex;
   align-items: center;
-  padding: 0.5rem 1rem;
-  background-color: #fff;
-  border-radius: 2rem;
-  font-size: 0.9rem;
-  color: #4a6981;
+  padding: 8px 16px;
+  background-color: #ededed;
+  border: #ededed solid 2px;
+  border-radius: 24px;
+  color: #000;
+  font-size: 15px;
+  text-decoration: none;
+  user-select: none;
   cursor: pointer;
   transition: all 0.2s ease;
-  user-select: none;
 }
 
 .filter-tag:hover {
-  background-color: #e9ecef;
+  background-color: #f5f5f5;
+  border: #f5f5f5 solid 2px;
+}
+
+.filter-tag:focus {
+  background-color: #f5f5f5;
+  border: #f5f5f5 solid 2px;
+  outline: 2px solid #385aff;
+  outline-offset: -1px;
 }
 
 .filter-tag.active {
+  border: #1E88E5 solid 2px;
   background-color: #1E88E5;
   color: #fff;
 }
