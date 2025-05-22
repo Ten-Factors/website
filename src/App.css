@@ -695,29 +695,6 @@ a.link:hover {
   line-height: 1.5;
 }
 
-/* Footer */
-.footer {
-  background-color: #f8f9fa;
-  padding: 2rem;
-  border-top: 1px solid #eaeaea;
-}
-
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.footer .copyright {
-  margin: 0 0 1rem 0;
-  color: #666;
-}
-
-.footer .license-note {
-  margin: 0;
-  color: #666;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .nav-menu {
