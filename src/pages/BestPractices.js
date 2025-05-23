@@ -943,6 +943,8 @@ function BestPractices() {
         <Section key={section.id} {...section} />
       ))}
 
+      <div className="section-last"></div>
+
     </div>
   );
 }

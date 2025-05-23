@@ -168,6 +168,10 @@ a.link:hover {
   padding: 0;
 }
 
+.section-last {
+  margin-top: 50px;
+}
+
 /* Collapsible Sections */
 .section-header {
   padding: 1rem;
