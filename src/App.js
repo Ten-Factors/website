@@ -19,8 +19,8 @@ function ScrollToTop() {
 }
 
 function App() {
-  // Get the base URL from the environment or default to '/ten-factors-website' for GitHub Pages
-  const basename = process.env.PUBLIC_URL || '/ten-factors-website';
+  // Determine the base URL based on the hostname
+  const basename = window.location.hostname === 'itspoma.github.io' ? '/ten-factors-website' : '';
 
   return (
     <Router basename={basename}>

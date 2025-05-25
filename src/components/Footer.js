@@ -94,7 +94,7 @@ function Footer() {
       <div className="footer-section footer-copyright">
         <div className="footer-section-content">
           <div className="footer-bottom-left">
-            <span>© {currentYear} Ten-Factors. All rights reserved.</span>
+            <span>© 2021–{currentYear} Ten-Factors. All rights reserved.</span>
             <span>
               Ten-Factors is distributed under&nbsp;
               <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="nofollow noopener noreferrer">
