@@ -86,7 +86,7 @@ function BestPractices() {
         <div className="section-content">
           <div 
             id={`section-${id}`}
-            className="section-header" 
+            className="section-collapsible-header" 
             onClick={() => toggleSection(id)}
           >
             {isExpanded && totalLinks > 0 ? <FaChevronDown /> : <FaChevronRight />}
@@ -97,7 +97,7 @@ function BestPractices() {
           </div>
 
           {isExpanded && (
-            <div className={`section-body ${isAnimating ? 'animating' : ''}`}>
+            <div className={`section-collapsible-body ${isAnimating ? 'animating' : ''}`}>
               {filteredSubsections?.map((subsection, index) => (
                 <div key={index} className="subsection">
                   <h3 className="subsection-title">{subsection.title}</h3>
@@ -273,6 +273,29 @@ function BestPractices() {
               "url": "https://lethain.com/migrations/",
               "type": "Article",
               "level": "3"
+            },
+            {
+              "url": "https://refactoring.fm/p/from-tech-debt-to-tech-capital",
+              "title": "(May 2025) Luca Rossi and Aviv Ben-Yosef explain how to shift from just fixing technical debt to building tech capital – long-term engineering investments that boost speed, tools, and data leverage.",
+              "type": "Article",
+              "level": "3"
+            }
+          ]
+        },
+        {
+          "title": "AI in Engineering Teams, AI Efficiency",
+          "links": [
+            {
+              "url": "https://news.northeastern.edu/2025/02/07/jevons-paradox-ai-future/",
+              "title": "(Feb 2025) AI efficiency paradox: more use, not less – Jevons Paradox revisited.",
+              "type": "Article",
+              "level": "1"
+            },
+            {
+              "url": "https://refactoring.fm/p/how-engineering-teams-use-ai",
+              "title": "(Mar 2025) Luca Rossi shares how real engineering teams use AI – covering code quality, documentation, testing, and the shift from solo to team workflows.",
+              "type": "Article",
+              "level": "2"
             }
           ]
         }
@@ -878,7 +901,7 @@ function BestPractices() {
   ];
 
   return (
-    <div className="page">
+    <div className="page page-best-practices">
       <Navigation />
 
       <section className="hero">

@@ -11,17 +11,12 @@ function Home() {
           <div className="hero-text">
             <h1 className="hero-title product-title">Ten-Factors</h1>
             <h2 className="hero-subtitle">
-              Open-Source and Community-Driven Standard to Measure and Improve Software Quality
+              Open-Source Framework to Measure and Improve Software Quality
             </h2>
             <div className="hero-description">
               <p>
-                A practical and scalable framework for measuring and improving software quality 
-                in technology service companies and products/startups. Ten-Factors help companies 
-                to maintain high standards in products, and make data-driven improvements.
-              </p>
-              <p>
-                Ten-Factors is a powerful tool for founders, CTOs, project managers, and engineers.
-                It helps any team committed to delivering consistent, high-quality software services achieve their goals.
+                Ten-Factors is a practical framework for measuring and improving software quality in technology companies 
+                and products/startups. It helps companies maintain high standards and make data-driven improvements.
               </p>
             </div>
             <button className="hero-button">Get Started</button>

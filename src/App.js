@@ -6,6 +6,7 @@ import Advantages from './pages/Advantages';
 import BestPractices from './pages/BestPractices';
 import SuccessStories from './pages/SuccessStories';
 import GetStarted from './pages/GetStarted';
+import NotFound from './pages/NotFound';
 import Footer from './components/Footer';
 
 function ScrollToTop() {
@@ -20,7 +21,7 @@ function ScrollToTop() {
 
 function App() {
   // Determine the base URL based on the hostname
-  const basename = window.location.hostname === 'itspoma.github.io' ? '/ten-factors-website' : '';
+  const basename = window.location.hostname === 'ten-factors.github.io' ? '/ten-factors-website' : '';
 
   return (
     <Router basename={basename}>
@@ -32,6 +33,7 @@ function App() {
           <Route path="/best-practices" element={<BestPractices />} />
           <Route path="/success-stories" element={<SuccessStories />} />
           <Route path="/get-started" element={<GetStarted />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </div>

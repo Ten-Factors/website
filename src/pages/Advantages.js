@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Navigation from '../components/Navigation';
 
 function Advantages() {
   return (
-    <div className="page">
+    <div className="page page-advantages">
       <Navigation />
 
       <section className="hero">
@@ -12,6 +13,12 @@ function Advantages() {
           <div className="hero-text">
             <h1 className="hero-title">What makes Ten-Factors special</h1>
           </div>
+        </div>
+      </section>
+
+      <section className="section">
+        <div className="section-content">
+          <h2 className="section-title">Unique benefits of Ten Factors (incl. comparison with ISO, 3rd party tools)</h2>
         </div>
       </section>
 
@@ -67,6 +74,30 @@ function Advantages() {
           <p className="section-subtitle">
             Ten-Factors is designed for everyone who cares about delivering high-quality software. Whether you're leading the company, managing projects, or writing code, Ten-Factors gives you clear, actionable insights.
           </p>
+        </div>
+      </section>
+
+      <section className="section section-read-further">
+        <div className="section-content">
+          <h2 className="section-title">Read further</h2>
+          <div className="read-further-links">
+            <Link to="/success-stories" className="read-further-link">
+              <h3>Success Stories</h3>
+              <p>See how Ten-Factors can supercharge your software quality</p>
+            </Link>
+            <Link to="/get-started" className="read-further-link">
+              <h3>Get Started</h3>
+              <p>Begin your journey with Ten-Factors</p>
+            </Link>
+            <Link to="/advantages" className="read-further-link">
+              <h3>Advantages</h3>
+              <p>Discover how Ten-Factors different from existed solutions</p>
+            </Link>
+            <Link to="/" className="read-further-link">
+              <h3>About</h3>
+              <p>Learn more about Ten-Factors</p>
+            </Link>
+          </div>
         </div>
       </section>
     </div>
