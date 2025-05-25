@@ -263,7 +263,7 @@ a.link:hover {
   text-decoration: none;
   transition: color 0.2s ease;
   display: inline-block;
-  letter-spacing: -0.7px;
+  letter-spacing: -0.6px;
 }
 
 .link-content {
@@ -284,7 +284,7 @@ a.link:hover {
   /* letter-spacing: -1px; */
   margin-left: 0.5rem;
   padding: 0.2rem 0.4rem;
-  opacity: 0.7;
+  /* opacity: 0.7; */
   transition: opacity 0.2s ease;
 }
 
@@ -324,42 +324,43 @@ a.link:hover {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   white-space: nowrap;
-  opacity: 0.6;
+  /* opacity: 0.6; */
   transition: opacity 0.2s ease;
+  background-color: #cbcbcb;
 }
 
 .content-type-badge.article {
-  background-color: #5495b6;
+  /* background-color: #5495b6; */
   color: #FFF;
 }
 
 .content-type-badge.guide {
-  background-color: #54b6ae;
+  /* background-color: #54b6ae; */
   color: #FFF;
 }
 
 .content-type-badge.platform {
-  background-color: #5475b6;
+  /* background-color: #5475b6; */
   color: #FFF;
 }
 
 .content-type-badge.video {
-  background-color: #b65454;
+  /* background-color: #b65454; */
   color: #FFF;
 }
 
 .content-type-badge.podcast {
-  background-color: #b68654;
+  /* background-color: #b68654; */
   color: #FFF;
 }
 
 .content-type-badge.book {
-  background-color: #54b671;
+  /* background-color: #54b671; */
   color: #FFF;
 }
 
 .link-item a:hover {
-  color: #1565C0;
+  color: #0e4789;
 }
 
 @keyframes fadeIn {
