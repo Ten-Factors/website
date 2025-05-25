@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ten-factors-website/static/css/main.353f2724.css",
-    "main.js": "/ten-factors-website/static/js/main.191c7464.js",
-    "static/js/453.6a7f43db.chunk.js": "/ten-factors-website/static/js/453.6a7f43db.chunk.js",
-    "index.html": "/ten-factors-website/index.html",
-    "main.353f2724.css.map": "/ten-factors-website/static/css/main.353f2724.css.map",
-    "main.191c7464.js.map": "/ten-factors-website/static/js/main.191c7464.js.map",
-    "453.6a7f43db.chunk.js.map": "/ten-factors-website/static/js/453.6a7f43db.chunk.js.map"
+    "main.css": "/static/css/main.353f2724.css",
+    "main.js": "/static/js/main.042207cc.js",
+    "static/js/453.6a7f43db.chunk.js": "/static/js/453.6a7f43db.chunk.js",
+    "index.html": "/index.html",
+    "main.353f2724.css.map": "/static/css/main.353f2724.css.map",
+    "main.042207cc.js.map": "/static/js/main.042207cc.js.map",
+    "453.6a7f43db.chunk.js.map": "/static/js/453.6a7f43db.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.353f2724.css",
-    "static/js/main.191c7464.js"
+    "static/js/main.042207cc.js"
   ]
 }
