@@ -19,7 +19,7 @@ function Home() {
                 and products/startups. It helps companies maintain high standards and make data-driven improvements.
               </p>
             </div>
-            <button className="hero-button">Get Started</button>
+            <button className="hero-button">Get your score</button>
           </div>
           <div className="hero-image"></div>
         </div>
@@ -109,7 +109,7 @@ function Home() {
               <p>Explore catalogue of industry best practices and guidelines</p>
             </Link>
             <Link to="/get-started" className="read-further-link">
-              <h3>Get Started</h3>
+              <h3>Get your score</h3>
               <p>Begin your journey with Ten-Factors</p>
             </Link>
           </div>

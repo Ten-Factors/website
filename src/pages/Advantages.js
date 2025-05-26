@@ -86,7 +86,7 @@ function Advantages() {
               <p>See how Ten-Factors can supercharge your software quality</p>
             </Link>
             <Link to="/get-started" className="read-further-link">
-              <h3>Get Started</h3>
+              <h3>Get your score</h3>
               <p>Begin your journey with Ten-Factors</p>
             </Link>
             <Link to="/advantages" className="read-further-link">

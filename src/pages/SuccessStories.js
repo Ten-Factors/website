@@ -27,7 +27,7 @@ function SuccessStories() {
           <h2 className="section-title">Read further</h2>
           <div className="read-further-links">
             <Link to="/get-started" className="read-further-link">
-              <h3>Get Started</h3>
+              <h3>Get your score</h3>
               <p>Begin your journey with Ten-Factors</p>
             </Link>
             <Link to="/best-practices" className="read-further-link">
