@@ -11,11 +11,11 @@ function Home() {
           <div className="hero-text">
             <h1 className="hero-title product-title">Ten-Factors</h1>
             <h2 className="hero-subtitle">
-              Open-Source Framework to Measure and Improve Software Quality
+              Measure and Improve Software Quality
             </h2>
             <div className="hero-description">
               <p>
-                Ten-Factors is a practical framework for measuring and improving software quality in technology companies 
+                Ten-Factors is a practical open-source framework for measuring and improving software quality in technology companies 
                 and products/startups. It helps companies maintain high standards and make data-driven improvements.
               </p>
             </div>

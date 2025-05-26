@@ -2,6 +2,7 @@
 - add email follow up 
 - linkedin page similar to https://www.linkedin.com/company/ai-maturity-index/
 - purchase integration on https://weeklyworkforce.com/
+- quality quiz
 
 # Marketing
 - "enter your 15-minute conversation with our AI assistant"

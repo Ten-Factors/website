@@ -263,7 +263,7 @@ a.link:hover {
   text-decoration: none;
   transition: color 0.2s ease;
   display: inline-block;
-  letter-spacing: -0.6px;
+  letter-spacing: -0.5px;
 }
 
 .link-content {
