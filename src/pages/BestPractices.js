@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navigation from '../components/Navigation';
 import { FaChevronDown, FaChevronRight } from 'react-icons/fa';
 
@@ -6,6 +6,38 @@ function BestPractices() {
   const [expandedSections, setExpandedSections] = useState({});
   const [animatingSections, setAnimatingSections] = useState({});
   const [selectedFilters, setSelectedFilters] = useState([]);
+
+  // Handle URL hash on initial load and hash changes
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.slice(1); // Remove the # symbol
+      if (hash) {
+        const sections = hash.split(',');
+        const newExpandedSections = {};
+        sections.forEach(section => {
+          newExpandedSections[section] = true;
+        });
+        setExpandedSections(newExpandedSections);
+
+        // Scroll to the first section after a short delay
+        setTimeout(() => {
+          const firstSection = document.querySelector(`#section-${sections[0]}`);
+          if (firstSection) {
+            const yOffset = -120;
+            const yPosition = firstSection.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            window.scrollTo({ top: yPosition, behavior: 'smooth' });
+          }
+        }, 100);
+      }
+    };
+
+    // Handle initial load
+    handleHashChange();
+
+    // Listen for hash changes
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
 
   const filters = [
     { id: 'level-1', label: 'Level 1 (Essentials)', title: 'Fundamental practices to start with' },
@@ -50,10 +82,23 @@ function BestPractices() {
       }, 50);
     }
 
-    setExpandedSections(prev => ({
-      ...prev,
-      [sectionId]: !prev[sectionId]
-    }));
+    // Update expanded sections state
+    const newExpandedSections = {
+      ...expandedSections,
+      [sectionId]: !expandedSections[sectionId]
+    };
+    setExpandedSections(newExpandedSections);
+
+    // Update URL hash with expanded sections
+    const expandedSectionIds = Object.entries(newExpandedSections)
+      .filter(([_, isExpanded]) => isExpanded)
+      .map(([id]) => id);
+
+    if (expandedSectionIds.length > 0) {
+      window.history.replaceState(null, '', `#${expandedSectionIds.join(',')}`);
+    } else {
+      window.history.replaceState(null, '', window.location.pathname);
+    }
   };
 
   const shouldShowLink = (link) => {
