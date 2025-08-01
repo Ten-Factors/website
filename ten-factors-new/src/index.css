@@ -1,0 +1,63 @@
+/* Import normalize.css from CDN */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import "tailwindcss";
+
+/* Tailwind v4 theme configuration */
+@theme {
+  --color-primary: #020205;
+  --color-tertiary: #676769;
+  --color-yellow-400: #ffba00;
+  --color-yellow-500: #f59e0b;
+  --font-family-sans: Inter, system-ui, sans-serif;
+  --font-family-heading: Inter, system-ui, sans-serif;
+}
+
+/* Custom base styles */
+@layer base {
+  html {
+    font-family: var(--font-family-sans);
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply text-primary bg-white;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Custom component styles */
+@layer components {
+  .btn-primary {
+    @apply bg-yellow-400 text-primary px-6 py-3 rounded-lg font-medium transition-all duration-300 shadow-sm hover:shadow-md;
+  }
+  
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .primary-gradient {
+    background: linear-gradient(84deg, #134E5E 0%, #71B280 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: gradient-shift 6s ease-in-out infinite;
+  }
+  
+  .btn-primary:hover {
+    @apply bg-yellow-500 transform -translate-y-0.5;
+  }
+}
+
+/* Animations */
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
