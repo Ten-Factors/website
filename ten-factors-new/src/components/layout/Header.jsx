@@ -3,7 +3,7 @@ import { useState } from 'react';
 import NavigationLinks from './NavigationLinks';
 import MobileMenu from './MobileMenu';
 import { useTranslation } from 'react-i18next';
-import {i18n} from '../../i18n';
+import i18n from '../../i18n';
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -21,8 +21,6 @@ const Header = () => {
           {/* Desktop navigation */}
           <NavigationLinks orientation="horizontal" />
 
-          <button onClick={() => i18n.changeLanguage('en')} className="text-xs">EN</button>
-          <button onClick={() => i18n.changeLanguage('uk')} className="text-xs">UK</button>
           {/* Right side: CTA + Hamburger */}
           <div className="flex items-center gap-3">
             <a href="#get-score" className="btn-primary hidden md:inline-flex">{t('cta.getScore')}</a>

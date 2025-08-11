@@ -18,5 +18,41 @@
   },
   "hero": {
     "diagramAlt": "Ten-Factors circular diagram"
+  },
+  "footer": {
+    "description": "Measure and improve software delivery performance with our comprehensive assessment tool.",
+    "product": "Product",
+    "features": "Features",
+    "pricing": "Pricing",
+    "documentation": "Documentation",
+    "company": "Company",
+    "about": "About",
+    "blog": "Blog",
+    "careers": "Careers",
+    "support": "Support",
+    "helpCenter": "Help Center",
+    "contact": "Contact",
+    "privacyPolicy": "Privacy Policy",
+    "cookieDeclaration": "Cookie Declaration",
+    "rightsReserved": "All rights reserved.",
+    "newsletter": {
+      "title": "Subscribe to our newsletter",
+      "subtitle": "Get product updates, best practices, and insights right to your inbox.",
+      "emailLabel": "Email address",
+      "placeholder": "Enter your email",
+      "submit": "Subscribe"
+    }
+  }
+  ,
+  "usage": {
+    "title": "How it works",
+    "subtitle": "Assess, analyze, and improve your software delivery performance in four simple steps.",
+    "cta": "Get Started",
+    "steps": {
+      "1": { "title": "Answer the questions", "desc": "Complete a short questionnaire across the Ten Factors to evaluate your current practices." },
+      "2": { "title": "Receive your score", "desc": "Instantly get a detailed score with strengths and areas to improve." },
+      "3": { "title": "Review best practices", "desc": "Explore actionable recommendations and best practices tailored to your results." },
+      "4": { "title": "Track improvements", "desc": "Implement changes and track progress over time to continuously improve." }
+    }
   }
 }
