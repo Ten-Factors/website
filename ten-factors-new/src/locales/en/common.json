@@ -52,7 +52,8 @@
       "1": { "title": "Answer the questions", "desc": "Complete a short questionnaire across the Ten Factors to evaluate your current practices." },
       "2": { "title": "Receive your score", "desc": "Instantly get a detailed score with strengths and areas to improve." },
       "3": { "title": "Review best practices", "desc": "Explore actionable recommendations and best practices tailored to your results." },
-      "4": { "title": "Track improvements", "desc": "Implement changes and track progress over time to continuously improve." }
+      "4": { "title": "Track improvements", "desc": "Implement changes and track progress over time to continuously improve." },
+      "5": { "title": "Track improvements", "desc": "Implement changes and track progress over time to continuously improve." }
     }
   }
 }
