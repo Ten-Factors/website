@@ -2,9 +2,12 @@ import React from 'react';
 import { useState } from 'react';
 import NavigationLinks from './NavigationLinks';
 import MobileMenu from './MobileMenu';
+import { useTranslation } from 'react-i18next';
+import {i18n} from '../../i18n';
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <header className="bg-white border-b border-gray-200 sticky top-0 z-40">
@@ -12,20 +15,22 @@ const Header = () => {
         <nav className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
-            <a href="#top" className="text-xl font-bold text-primary">Ten-Factors</a>
+            <a href="#top" className="text-xl font-bold text-primary">{t('brand')}</a>
           </div>
 
           {/* Desktop navigation */}
           <NavigationLinks orientation="horizontal" />
 
+          <button onClick={() => i18n.changeLanguage('en')} className="text-xs">EN</button>
+          <button onClick={() => i18n.changeLanguage('uk')} className="text-xs">UK</button>
           {/* Right side: CTA + Hamburger */}
           <div className="flex items-center gap-3">
-            <a href="#get-score" className="btn-primary hidden md:inline-flex">Get Your Score</a>
+            <a href="#get-score" className="btn-primary hidden md:inline-flex">{t('cta.getScore')}</a>
 
             {/* Hamburger for mobile */}
             <button
               type="button"
-              aria-label="Open menu"
+              aria-label={t('aria.openMenu')}
               onClick={() => setOpen(true)}
               className="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
             >

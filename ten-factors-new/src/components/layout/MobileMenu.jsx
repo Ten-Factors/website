@@ -1,5 +1,6 @@
 import React from 'react';
 import NavigationLinks from './NavigationLinks';
+import { useTranslation } from 'react-i18next';
 
 /**
  * MobileMenu - slide-in drawer from the right
@@ -8,6 +9,7 @@ import NavigationLinks from './NavigationLinks';
  * - onClose: () => void
  */
 const MobileMenu = ({ open, onClose }) => {
+  const { t } = useTranslation();
   return (
     <div className={
       `md:hidden fixed inset-0 z-50 ${open ? 'pointer-events-auto' : 'pointer-events-none'}`
@@ -25,11 +27,11 @@ const MobileMenu = ({ open, onClose }) => {
         aria-modal="true"
       >
         <div className="flex items-center justify-between h-16 px-6 border-b border-gray-200">
-          <div className="text-lg font-semibold text-primary">Menu</div>
+          <div className="text-lg font-semibold text-primary">{t('menu')}</div>
           <button
             type="button"
             onClick={onClose}
-            aria-label="Close menu"
+            aria-label={t('aria.closeMenu')}
             className="p-2 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-6 w-6 text-primary">
@@ -42,7 +44,7 @@ const MobileMenu = ({ open, onClose }) => {
           <NavigationLinks orientation="vertical" onNavigate={onClose} />
 
           <div className="mt-8">
-            <a href="#get-score" onClick={onClose} className="btn-primary w-full inline-flex justify-center">Get Your Score</a>
+            <a href="#get-score" onClick={onClose} className="btn-primary w-full inline-flex justify-center">{t('cta.getScore')}</a>
           </div>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { NAVIGATION } from '../../assets/constants';
+import { useTranslation } from 'react-i18next';
 
 /**
  * NavigationLinks
@@ -9,6 +10,7 @@ import { NAVIGATION } from '../../assets/constants';
  * - onNavigate: optional callback invoked when a link is clicked (useful to close mobile drawer)
  */
 const NavigationLinks = ({ orientation = 'horizontal', onNavigate }) => {
+  const { t } = useTranslation();
   const linkBase = 'text-primary hover:text-gray-600 transition-colors';
   const containerClass =
     orientation === 'vertical'
@@ -24,7 +26,7 @@ const NavigationLinks = ({ orientation = 'horizontal', onNavigate }) => {
           className={linkBase}
           onClick={onNavigate}
         >
-          {link.label}
+          {t(link.key)}
         </a>
       ))}
     </div>

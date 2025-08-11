@@ -1,0 +1,22 @@
+{
+  "brand": "Ten-Factors",
+  "menu": "Menu",
+  "cta": {
+    "getScore": "Get Your Score"
+  },
+  "aria": {
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "nav": {
+    "about": "About",
+    "advantages": "Advantages",
+    "successStories": "Success stories",
+    "getStarted": "Get Started",
+    "bestPractices": "Best Practices",
+    "application": "Application"
+  },
+  "hero": {
+    "diagramAlt": "Ten-Factors circular diagram"
+  }
+}

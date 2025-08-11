@@ -47,11 +47,11 @@ export const ICONS = {
 // Navigation configuration
 export const NAVIGATION = {
   links: [
-    { href: '#about', label: 'About', title: 'Go to the page' },
-    { href: '#advantages', label: 'Advantages', title: 'Go to the page' },
-    { href: '#success-stories', label: 'Success stories', title: 'Go to the page' },
-    { href: '#get-started', label: 'Get Started', title: 'Go to the page' },
-    { href: '#best-practices', label: 'Best Practices', title: 'Go to the page' },
-    { href: '#application', label: 'Application', title: 'Go to the page' }
+    { href: '#about', key: 'nav.about' },
+    { href: '#advantages', key: 'nav.advantages' },
+    { href: '#success-stories', key: 'nav.successStories' },
+    { href: '#get-started', key: 'nav.getStarted' },
+    { href: '#best-practices', key: 'nav.bestPractices' },
+    { href: '#application', key: 'nav.application' }
   ]
 };

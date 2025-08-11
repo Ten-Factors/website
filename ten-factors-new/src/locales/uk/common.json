@@ -1,0 +1,22 @@
+{
+  "brand": "Ten-Factors",
+  "menu": "Меню",
+  "cta": {
+    "getScore": "Отримати оцінку"
+  },
+  "aria": {
+    "openMenu": "Відкрити меню",
+    "closeMenu": "Закрити меню"
+  },
+  "nav": {
+    "about": "Про нас",
+    "advantages": "Переваги",
+    "successStories": "Історії успіху",
+    "getStarted": "Почати",
+    "bestPractices": "Найкращі практики",
+    "application": "Застосування"
+  },
+  "hero": {
+    "diagramAlt": "Кругова діаграма Ten-Factors"
+  }
+}
