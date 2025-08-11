@@ -4,6 +4,8 @@
 // Layout Components
 export { default as Header } from './layout/Header';
 export { default as Footer } from './layout/Footer';
+export { default as NavigationLinks } from './layout/NavigationLinks';
+export { default as MobileMenu } from './layout/MobileMenu';
 
 // Section Components
 export { default as Hero } from './sections/Hero';
