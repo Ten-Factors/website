@@ -55,5 +55,36 @@
       "4": { "title": "Track improvements", "desc": "Implement changes and track progress over time to continuously improve." },
       "5": { "title": "Track improvements", "desc": "Implement changes and track progress over time to continuously improve." }
     }
+  },
+  "caseStudies": {
+    "title": "Case Studies",
+    "subtitle": "See how teams improved their delivery performance with Ten-Factors.",
+    "readMore": "Read more",
+    "items": {
+      "1": {
+        "company": "Acme Corp",
+        "title": "Accelerated release cadence",
+        "summary": "By focusing on deployment automation and CI, Acme reduced lead time while increasing quality.",
+        "result": "+35% faster releases"
+      },
+      "2": {
+        "company": "Globex",
+        "title": "Stability and speed together",
+        "summary": "Improved incident response and change management brought fewer failures with quicker recovery.",
+        "result": "-40% incidents"
+      },
+      "3": {
+        "company": "Initech",
+        "title": "From manual to automated",
+        "summary": "Migrating to trunk-based development and automated tests unlocked consistent delivery.",
+        "result": "+50% test coverage"
+      },
+      "4": {
+        "company": "Initech",
+        "title": "From manual to automated",
+        "summary": "Migrating to trunk-based development and automated tests unlocked consistent delivery.",
+        "result": "+50% test coverage"
+      }
+    }
   }
 }
