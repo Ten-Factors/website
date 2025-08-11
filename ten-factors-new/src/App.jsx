@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Footer, Hero } from './components';
+import { Header, Footer, Hero, UsageProcess, CaseStudies } from './components';
 import './styles/globals.css';
 
 function App() {
@@ -8,7 +8,8 @@ function App() {
       <Header />
       <main className="flex-1">
         <Hero />
-        {/* Additional sections will be added here */}
+        <UsageProcess />
+        <CaseStudies />
       </main>
       <Footer />
     </div>

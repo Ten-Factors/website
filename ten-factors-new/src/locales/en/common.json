@@ -1,0 +1,90 @@
+{
+  "brand": "Ten-Factors",
+  "menu": "Menu",
+  "cta": {
+    "getScore": "Get Your Score"
+  },
+  "aria": {
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "nav": {
+    "about": "About",
+    "advantages": "Advantages",
+    "successStories": "Success stories",
+    "getStarted": "Get Started",
+    "bestPractices": "Best Practices",
+    "application": "Application"
+  },
+  "hero": {
+    "diagramAlt": "Ten-Factors circular diagram"
+  },
+  "footer": {
+    "description": "Measure and improve software delivery performance with our comprehensive assessment tool.",
+    "product": "Product",
+    "features": "Features",
+    "pricing": "Pricing",
+    "documentation": "Documentation",
+    "company": "Company",
+    "about": "About",
+    "blog": "Blog",
+    "careers": "Careers",
+    "support": "Support",
+    "helpCenter": "Help Center",
+    "contact": "Contact",
+    "privacyPolicy": "Privacy Policy",
+    "cookieDeclaration": "Cookie Declaration",
+    "rightsReserved": "All rights reserved.",
+    "newsletter": {
+      "title": "Subscribe to our newsletter",
+      "subtitle": "Get product updates, best practices, and insights right to your inbox.",
+      "emailLabel": "Email address",
+      "placeholder": "Enter your email",
+      "submit": "Subscribe"
+    }
+  }
+  ,
+  "usage": {
+    "title": "How it works",
+    "subtitle": "Assess, analyze, and improve your software delivery performance in four simple steps.",
+    "cta": "Get Started",
+    "steps": {
+      "1": { "title": "Answer the questions", "desc": "Complete a short questionnaire across the Ten Factors to evaluate your current practices." },
+      "2": { "title": "Receive your score", "desc": "Instantly get a detailed score with strengths and areas to improve." },
+      "3": { "title": "Review best practices", "desc": "Explore actionable recommendations and best practices tailored to your results." },
+      "4": { "title": "Track improvements", "desc": "Implement changes and track progress over time to continuously improve." },
+      "5": { "title": "Track improvements", "desc": "Implement changes and track progress over time to continuously improve." }
+    }
+  },
+  "caseStudies": {
+    "title": "Case Studies",
+    "subtitle": "See how teams improved their delivery performance with Ten-Factors.",
+    "readMore": "Read more",
+    "items": {
+      "1": {
+        "company": "Acme Corp",
+        "title": "Accelerated release cadence",
+        "summary": "By focusing on deployment automation and CI, Acme reduced lead time while increasing quality.",
+        "result": "+35% faster releases"
+      },
+      "2": {
+        "company": "Globex",
+        "title": "Stability and speed together",
+        "summary": "Improved incident response and change management brought fewer failures with quicker recovery.",
+        "result": "-40% incidents"
+      },
+      "3": {
+        "company": "Initech",
+        "title": "From manual to automated",
+        "summary": "Migrating to trunk-based development and automated tests unlocked consistent delivery.",
+        "result": "+50% test coverage"
+      },
+      "4": {
+        "company": "Initech",
+        "title": "From manual to automated",
+        "summary": "Migrating to trunk-based development and automated tests unlocked consistent delivery.",
+        "result": "+50% test coverage"
+      }
+    }
+  }
+}
