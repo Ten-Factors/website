@@ -137,5 +137,26 @@
       { "name": "Liam Brown", "role": "QA Engineer", "company": "Hooli" },
       { "name": "Emma Wilson", "role": "Tech Writer", "company": "Soylent" }
     ]
+  },
+  "readFurther": {
+    "title": "Read Further",
+    "cards": {
+      "advantages": {
+        "title": "Advantages",
+        "desc": "Discover how Ten-Factors differs from existing solutions"
+      },
+      "successStories": {
+        "title": "Success Stories",
+        "desc": "See how Ten-Factors can supercharge your software quality"
+      },
+      "bestPractices": {
+        "title": "Library of Best Practices",
+        "desc": "Explore the catalogue of industry best practices and guidelines"
+      },
+      "getStarted": {
+        "title": "Get Started",
+        "desc": "Begin your journey with Ten-Factors"
+      }
+    }
   }
 }

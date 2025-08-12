@@ -33,7 +33,7 @@ const Testimonials = () => {
   }, [emblaApi, onSelect]);
 
   return (
-    <section id="testimonials" className="py-16 lg:py-24 bg-white">
+    <section id="testimonials" className="py-16 lg:py-24 bg-white overflow-x-hidden">
       <div className="container-custom">
         <div className="max-w-2xl">
           <h2 className="text-5xl lg:text-7xl font-bold text-primary mb-2 primary-gradient leading-tight">
