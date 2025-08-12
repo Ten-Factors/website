@@ -86,5 +86,39 @@
         "result": "+50% test coverage"
       }
     }
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "subtitle": "Discover how Ten-Factors has transformed software quality for companies of different sizes and industries.",
+    "items": {
+      "1": {
+        "quote": "Ten-Factors gave us a clear picture of our delivery bottlenecks and where to focus first.",
+        "name": "Sarah Lee",
+        "role": "Engineering Manager",
+        "flag": "🇺🇸",
+        "company": "Acme Corp"
+      },
+      "2": {
+        "quote": "Our time to restore improved because we finally measured and tracked the right practices.",
+        "name": "Miguel Santos",
+        "role": "Site Reliability Engineer",
+        "flag": "🇵🇹",
+        "company": "Globex"
+      },
+      "3": {
+        "quote": "Simple, actionable, and measurable. It helped align product and engineering on outcomes.",
+        "name": "Anna Petrov",
+        "role": "Head of Product",
+        "flag": "🇺🇦",
+        "company": "Initech"
+      },
+      "4": {
+        "quote": "The assessment exposed quick wins. Within weeks we saw fewer incidents and faster releases.",
+        "name": "James Kim",
+        "role": "DevOps Lead",
+        "flag": "🇰🇷",
+        "company": "Umbrella"
+      }
+    }
   }
 }
