@@ -41,10 +41,10 @@ const CaseStudies = () => {
   }, [emblaApi, onSelect]);
 
   return (
-    <section id="case-studies" className="py-16 lg:py-24 bg-white">
+    <section id="case-studies" className="py-16 lg:py-24 bg-white overflow-x-hidden">
       <div className="container-custom">
         <div className="max-w-2xl">
-          <h2 className="text-4xl lg:text-6xl font-bold text-primary mb-3 leading-tight">
+          <h2 className="text-5xl lg:text-7xl font-bold text-primary mb-2 primary-gradient leading-tight">
             {t('caseStudies.title')}
           </h2>
           <p className="text-tertiary text-lg lg:text-xl mb-10">
@@ -53,28 +53,7 @@ const CaseStudies = () => {
         </div>
 
         <div className="relative">
-          <div className="flex justify-end gap-2 mb-4">
-            <button
-              type="button"
-              onClick={() => emblaApi && emblaApi.scrollPrev()}
-              disabled={prevDisabled}
-              className={`px-3 py-2 border border-gray-200 rounded-md text-primary hover:bg-gray-50 disabled:opacity-40 disabled:cursor-not-allowed`}
-              aria-label="Scroll previous"
-            >
-              ◀
-            </button>
-            <button
-              type="button"
-              onClick={() => emblaApi && emblaApi.scrollNext()}
-              disabled={nextDisabled}
-              className={`px-3 py-2 border border-gray-200 rounded-md text-primary hover:bg-gray-50 disabled:opacity-40 disabled:cursor-not-allowed`}
-              aria-label="Scroll next"
-            >
-              ▶
-            </button>
-          </div>
-
-          <div className="overflow-hidden" ref={emblaRef} aria-label={t('caseStudies.title')}>
+          <div ref={emblaRef} aria-label={t('caseStudies.title')}>
             <div className="flex gap-4 lg:gap-6">
               {items.map((item) => (
                 <article

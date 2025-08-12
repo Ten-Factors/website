@@ -86,5 +86,77 @@
         "result": "+50% test coverage"
       }
     }
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "subtitle": "Discover how Ten-Factors has transformed software quality for companies of different sizes and industries.",
+    "items": {
+      "1": {
+        "quote": "Ten-Factors gave us a clear picture of our delivery bottlenecks and where to focus first.",
+        "name": "Sarah Lee",
+        "role": "Engineering Manager",
+        "flag": "🇺🇸",
+        "company": "Acme Corp"
+      },
+      "2": {
+        "quote": "Our time to restore improved because we finally measured and tracked the right practices.",
+        "name": "Miguel Santos",
+        "role": "Site Reliability Engineer",
+        "flag": "🇵🇹",
+        "company": "Globex"
+      },
+      "3": {
+        "quote": "Simple, actionable, and measurable. It helped align product and engineering on outcomes.",
+        "name": "Anna Petrov",
+        "role": "Head of Product",
+        "flag": "🇺🇦",
+        "company": "Initech"
+      },
+      "4": {
+        "quote": "The assessment exposed quick wins. Within weeks we saw fewer incidents and faster releases.",
+        "name": "James Kim",
+        "role": "DevOps Lead",
+        "flag": "🇰🇷",
+        "company": "Umbrella"
+      }
+    }
+  },
+  "ctaSection": {
+    "title": "Ready to try Ten-Factors?",
+    "subtitle": "Start measuring and improving your software quality today.",
+    "primary": "Get Started Now"
+  },
+  "contributors": {
+    "title": "Contributors",
+    "subtitle": "People who helped build Ten‑Factors.",
+    "items": [
+      { "name": "Roman Rodomansky", "role": "Co-Founder", "company": "RALABS", "avatar": "/src/assets/images/RRodomanskiy.png" },
+      { "name": "Daniel Niiaziiev", "role": "Head of Engineering", "company": "RALABS", "avatar": "/src/assets/images/DNiaziev.png" },
+      { "name": "Alex Kim", "role": "Full‑stack Engineer", "company": "Umbrella" },
+      { "name": "Maria Garcia", "role": "Product Manager", "company": "Initech" },
+      { "name": "Liam Brown", "role": "QA Engineer", "company": "Hooli" },
+      { "name": "Emma Wilson", "role": "Tech Writer", "company": "Soylent" }
+    ]
+  },
+  "readFurther": {
+    "title": "Read Further",
+    "cards": {
+      "advantages": {
+        "title": "Advantages",
+        "desc": "Discover how Ten-Factors differs from existing solutions"
+      },
+      "successStories": {
+        "title": "Success Stories",
+        "desc": "See how Ten-Factors can supercharge your software quality"
+      },
+      "bestPractices": {
+        "title": "Library of Best Practices",
+        "desc": "Explore the catalogue of industry best practices and guidelines"
+      },
+      "getStarted": {
+        "title": "Get Started",
+        "desc": "Begin your journey with Ten-Factors"
+      }
+    }
   }
 }

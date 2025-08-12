@@ -12,12 +12,13 @@ export { default as Hero } from './sections/Hero';
 export { default as UsageProcess } from './sections/UsageProcess';
 // export { default as Comparison } from './sections/Comparison';
 export { default as CaseStudies } from './sections/CaseStudies';
-// export { default as Testimonials } from './sections/Testimonials';
-// export { default as CTA } from './sections/CTA';
-// export { default as Contributors } from './sections/Contributors';
-// export { default as ReadFurther } from './sections/ReadFurther';
+export { default as Testimonials } from './sections/Testimonials';
+export { default as CTA } from './sections/CTA';
+export { default as Contributors } from './sections/Contributors';
+export { default as ReadFurther } from './sections/ReadFurther';
 
 // UI Components
 export { default as Button } from './ui/Button';
 export { default as Card } from './ui/Card';
 export { default as Container } from './ui/Container';
+export { default as ReadFurtherCard } from './ui/ReadFurtherCard';
