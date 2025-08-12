@@ -125,5 +125,17 @@
     "title": "Ready to try Ten-Factors?",
     "subtitle": "Start measuring and improving your software quality today.",
     "primary": "Get Started Now"
+  },
+  "contributors": {
+    "title": "Contributors",
+    "subtitle": "People who helped build Ten‑Factors.",
+    "items": [
+      { "name": "Roman Rodomansky", "role": "Co-Founder", "company": "RALABS", "avatar": "/src/assets/images/RRodomanskiy.png" },
+      { "name": "Daniel Niiaziiev", "role": "Head of Engineering", "company": "RALABS", "avatar": "/src/assets/images/DNiaziev.png" },
+      { "name": "Alex Kim", "role": "Full‑stack Engineer", "company": "Umbrella" },
+      { "name": "Maria Garcia", "role": "Product Manager", "company": "Initech" },
+      { "name": "Liam Brown", "role": "QA Engineer", "company": "Hooli" },
+      { "name": "Emma Wilson", "role": "Tech Writer", "company": "Soylent" }
+    ]
   }
 }

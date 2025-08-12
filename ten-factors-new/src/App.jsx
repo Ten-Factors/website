@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Footer, Hero, UsageProcess, CaseStudies, Testimonials, CTA } from './components';
+import { Header, Footer, Hero, UsageProcess, CaseStudies, Testimonials, CTA, Contributors } from './components';
 import './styles/globals.css';
 
 function App() {
@@ -12,6 +12,7 @@ function App() {
         <CaseStudies />
         <Testimonials />
         <CTA />
+        <Contributors />
       </main>
       <Footer />
     </div>

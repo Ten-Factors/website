@@ -125,5 +125,18 @@
     "title": "Готові спробувати Ten-Factors?",
     "subtitle": "Почніть вимірювати та покращувати якість свого програмного забезпечення вже сьогодні.",
     "primary": "Почати зараз"
+  },
+  
+  "contributors": {
+    "title": "Контриб'ютори",
+    "subtitle": "Люди, які допомогли створити Ten‑Factors.",
+    "items": [
+      { "name": "Roman Rodomansky", "role": "Co-Founder", "company": "RALABS", "avatar": "/src/assets/images/RRodomanskiy.png" },
+      { "name": "Daniel Niiaziiev", "role": "Head of Engineering", "company": "RALABS", "avatar": "/src/assets/images/DNiaziev.png" },
+      { "name": "Alex Kim", "role": "Фулстек інженер", "company": "Umbrella" },
+      { "name": "Maria Garcia", "role": "Продуктова менеджерка", "company": "Initech" },
+      { "name": "Liam Brown", "role": "QA інженер", "company": "Hooli" },
+      { "name": "Emma Wilson", "role": "Технічна письменниця", "company": "Soylent" }
+    ]
   }
 }
