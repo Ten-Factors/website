@@ -9,26 +9,27 @@ export default function ReadFurther() {
   const { t } = useTranslation();
   return (
     <section
-      className="box-border content-stretch flex flex-col gap-12 items-start justify-start p-[80px] relative w-full"
+      className="container mx-auto px-8 py-20 relative"
       id="node-118_16688"
     >
       {/* Decorative background */}
+      {/* TODO: fix mobile overflow-x */}
       <div
-        className="absolute h-[828px] left-1/2 opacity-[0.08] overflow-clip top-1/2 -z-10 translate-x-[-50%] translate-y-[-50%] w-[1440px] pointer-events-none select-none"
+        className="absolute opacity-8 top-1/2 left-1/2 -z-10 transform -translate-x-1/2 -translate-y-1/2 w-[1440px] h-[828px]"
         aria-hidden
       >
         <div className="absolute inset-0">
-          <img alt="" className="block max-w-none w-full h-full object-cover" src={imgLayer1} />
+          <img alt="" className="block w-full h-full object-cover" src={imgLayer1} />
         </div>
       </div>
 
       {/* Heading */}
-      <h2 className="text-5xl font-bold primary-gradient mb-2">
+      <h2 className="text-5xl font-bold gradient-primary mb-4">
         {t('readFurther.title')}
       </h2>
 
       {/* Cards grid */}
-      <div className="flex flex-wrap gap-6 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <ReadFurtherCard
           titleKey="readFurther.cards.advantages.title"
           descKey="readFurther.cards.advantages.desc"
