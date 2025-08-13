@@ -5,6 +5,7 @@ This template provides a minimal setup to get React working in Vite with HMR and
 ## How to run local copy of projects web
 
 1. Clone this repository
+2. Go to folder `cd ./ten-factors-new/`
 2. Install dependencies: `pnpm i` or `npm i`
 3. Run development server: `pnpm dev` or `npm run dev`
 4. Open `http://localhost:5173` in browser
