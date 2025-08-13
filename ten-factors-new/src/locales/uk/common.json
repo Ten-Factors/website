@@ -138,5 +138,26 @@
       { "name": "Liam Brown", "role": "QA інженер", "company": "Hooli" },
       { "name": "Emma Wilson", "role": "Технічна письменниця", "company": "Soylent" }
     ]
+  },
+  "readFurther": {
+    "title": "Докладніше",
+    "cards": {
+      "advantages": {
+        "title": "Переваги",
+        "desc": "Дізнайтесь, як Ten-Factors відрізняється від існуючих рішень"
+      },
+      "successStories": {
+        "title": "Історії успіху",
+        "desc": "Дізнайтесь, як Ten-Factors може покращити якість вашого програмного забезпечення"
+      },
+      "bestPractices": {
+        "title": "Каталог кращих практик",
+        "desc": "Ознайомтеся з каталогом кращих практик та настанов по всьому світу"
+      },
+      "getStarted": {
+        "title": "Почати",
+        "desc": "Почніть свій шлях з Ten-Factors"
+      }
+    }
   }
 }

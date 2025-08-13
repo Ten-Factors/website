@@ -24,7 +24,7 @@ export default function ReadFurther() {
       </div>
 
       {/* Heading */}
-      <h2 className="text-5xl font-bold gradient-primary mb-4">
+      <h2 className="text-5xl font-bold primary-gradient mb-4">
         {t('readFurther.title')}
       </h2>
 
