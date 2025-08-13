@@ -51,7 +51,7 @@ const Testimonials = () => {
               {items.map((item) => (
                 <article
                   key={item.key}
-                  className="h-max flex-[0_0_85%] sm:flex-[0_0_70%] md:flex-[0_0_50%] lg:flex-[0_0_40%] xl:flex-[0_0_33%] p-6 border border-gray-200 rounded-xl bg-white shadow-sm hover:shadow transition-shadow"
+                  className="h-max flex-[0_0_85%] sm:flex-[0_0_70%] md:flex-[0_0_50%] lg:flex-[0_0_40%] xl:flex-[0_0_33%] p-6 primary-shadow rounded-xl bg-white shadow-sm hover:shadow transition-shadow"
                 >
                   <svg
                     className="mb-6"

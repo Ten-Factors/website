@@ -6,7 +6,7 @@ export default function ReadFurtherCard({ titleKey, descKey, href = '#' }) {
   return (
     <a
       href={href}
-      className="bg-white flex flex-col items-center justify-start overflow-clip rounded-2xl shadow-[0px_4px_16px_0px_rgba(19,78,94,0.13)] w-full sm:w-[48%] max-w-[630px] focus:outline-none focus:ring-2 focus:ring-yellow-400"
+      className="bg-white flex flex-col items-center justify-start overflow-clip rounded-2xl primary-shadow w-full max-w-[630px] focus:outline-none focus:ring-2 focus:ring-yellow-400"
     >
       <div className="flex flex-col gap-4 items-start justify-start px-10 py-8 w-full">
         <div className="flex flex-col gap-3 items-start text-left text-primary w-full">

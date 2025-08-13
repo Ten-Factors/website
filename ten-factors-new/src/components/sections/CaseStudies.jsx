@@ -43,7 +43,7 @@ const CaseStudies = () => {
               {items.map((item) => (
                 <article
                   key={item.key}
-                  className="group flex-[0_0_85%] sm:flex-[0_0_70%] md:flex-[0_0_50%] lg:flex-[0_0_40%] xl:flex-[0_0_33%] flex flex-col rounded-3xl bg-white shadow-[0_4px_16px_rgba(19,78,94,0.13)] transition-all hover:-translate-y-0.5"
+                  className="group flex-[0_0_85%] sm:flex-[0_0_70%] md:flex-[0_0_50%] lg:flex-[0_0_40%] xl:flex-[0_0_33%] flex flex-col rounded-3xl bg-white primary-shadow transition-all hover:-translate-y-0.5"
                 >
                   {/* Header / Logo strip */}
                   <div className="relative h-64 w-full bg-[#f9f8f9] rounded-t-3xl">
