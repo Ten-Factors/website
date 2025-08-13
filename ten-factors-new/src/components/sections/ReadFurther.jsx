@@ -15,7 +15,7 @@ export default function ReadFurther() {
       {/* Decorative background */}
       {/* TODO: fix mobile overflow-x */}
       <div
-        className="absolute opacity-8 top-1/2 left-1/2 -z-10 transform -translate-x-1/2 -translate-y-1/2 w-[1440px] h-[828px]"
+        className="absolute opacity-8 top-1/2 left-1/2 -z-10 transform -translate-x-1/2 -translate-y-1/2 w-[100%] h-[828px]"
         aria-hidden
       >
         <div className="absolute inset-0">
@@ -24,7 +24,7 @@ export default function ReadFurther() {
       </div>
 
       {/* Heading */}
-      <h2 className="text-5xl font-bold gradient-primary mb-4">
+      <h2 className="text-5xl font-bold primary-gradient mb-4">
         {t('readFurther.title')}
       </h2>
 

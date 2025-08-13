@@ -20,25 +20,10 @@ const items = [
 
 const CaseStudies = () => {
   const { t } = useTranslation();
-  const [emblaRef, emblaApi] = useEmblaCarousel(
+  const [emblaRef] = useEmblaCarousel(
     { align: 'start', loop: false, dragFree: false, slidesToScroll: 1 },
     [Autoplay({ delay: 4000, stopOnInteraction: false })]
   );
-  const [prevDisabled, setPrevDisabled] = React.useState(true);
-  const [nextDisabled, setNextDisabled] = React.useState(true);
-
-  const onSelect = React.useCallback(() => {
-    if (!emblaApi) return;
-    setPrevDisabled(!emblaApi.canScrollPrev());
-    setNextDisabled(!emblaApi.canScrollNext());
-  }, [emblaApi]);
-
-  React.useEffect(() => {
-    if (!emblaApi) return;
-    onSelect();
-    emblaApi.on('select', onSelect);
-    emblaApi.on('reInit', onSelect);
-  }, [emblaApi, onSelect]);
 
   return (
     <section id="case-studies" className="py-16 lg:py-24 bg-white overflow-x-hidden">
@@ -58,34 +43,42 @@ const CaseStudies = () => {
               {items.map((item) => (
                 <article
                   key={item.key}
-                  className="flex-[0_0_85%] sm:flex-[0_0_70%] md:flex-[0_0_50%] lg:flex-[0_0_40%] xl:flex-[0_0_33%] p-6 border border-gray-200 rounded-xl bg-white shadow-sm hover:shadow transition-shadow"
+                  className="group flex-[0_0_85%] sm:flex-[0_0_70%] md:flex-[0_0_50%] lg:flex-[0_0_40%] xl:flex-[0_0_33%] flex flex-col rounded-3xl bg-white primary-shadow transition-all hover:-translate-y-0.5"
                 >
-                <div className="h-40 w-full flex items-center justify-center mb-4">
-                  <div className="w-[221px] h-[80px] bg-gray-200 rounded-xl flex items-center justify-center">
-                    <img
-                    //   src={IMAGES[item.key]}
-                      alt={t(`${item.key}.company`)}
-                      className="max-w-full max-h-full"
-                    />
-                  </div>
-                </div>
-                
-                  <header className="mb-4">
-                    <div className="text-sm text-tertiary">{t(`${item.key}.company`)}</div>
-                    <h3 className="text-xl font-semibold text-primary mt-1">
-                      {t(`${item.key}.title`)}
-                    </h3>
-                  </header>
-                  <p className="text-tertiary mb-4">
-                    {t(`${item.key}.summary`)}
-                  </p>
-                  <div className="flex items-center justify-between mt-auto">
-                    <div className="text-primary font-semibold">
-                      {t(`${item.key}.result`)}
+                  {/* Header / Logo strip */}
+                  <div className="relative h-64 w-full bg-[#f9f8f9] rounded-t-3xl">
+                    <div className="absolute inset-0 border-b border-gray-200 pointer-events-none" aria-hidden="true" />
+                    <div className="h-full w-full flex items-center justify-center">
+                      <div className="w-[221px] h-[80px] bg-white/80 border border-gray-200 rounded-xl flex items-center justify-center">
+                        <img
+                          // src={IMAGES[item.key]}
+                          alt={t(`${item.key}.company`)}
+                          className="max-w-full max-h-full object-contain"
+                        />
+                      </div>
                     </div>
-                    <a href="#" className="text-primary hover:opacity-80 text-sm font-medium">
-                      {t('caseStudies.readMore')} →
-                    </a>
+                  </div>
+
+                  {/* Content */}
+                  <div className="flex flex-col gap-4 w-full p-6">
+                    <div className="flex flex-col gap-2 text-primary">
+                      <h3 className="text-[22px] lg:text-[24px] leading-7 lg:leading-8 tracking-[0.2px] font-semibold">
+                        {t(`${item.key}.title`)}
+                      </h3>
+                      <p className="text-tertiary text-sm lg:text-base leading-6">
+                        {t(`${item.key}.summary`)}
+                      </p>
+                    </div>
+
+                    <div className="mt-2">
+                      <a
+                        href="#"
+                        className="relative block w-full rounded-2xl border border-primary text-primary px-6 py-3 text-center text-sm lg:text-base font-medium hover:opacity-80"
+                        aria-label={t('caseStudies.readMore')}
+                      >
+                        {t('caseStudies.readMore')}
+                      </a>
+                    </div>
                   </div>
                 </article>
               ))}
