@@ -1,56 +1,63 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 
 const items = [
-  { key: 'testimonials.items.1' },
-  { key: 'testimonials.items.2' },
-  { key: 'testimonials.items.3' },
-  { key: 'testimonials.items.4' },
+  {
+    quote: "Ten-Factors gave us a clear picture of our delivery bottlenecks and where to focus first.",
+    name: "Sarah Lee",
+    role: "Engineering Manager",
+    flag: "🇺🇸",
+    company: "Acme Corp"
+  },
+  {
+    quote: "Our time to restore improved because we finally measured and tracked the right practices.",
+    name: "Miguel Santos",
+    role: "Site Reliability Engineer",
+    flag: "🇵🇹",
+    company: "Globex"
+  },
+  {
+    quote: "Simple, actionable, and measurable. It helped align product and engineering on outcomes.",
+    name: "Anna Petrov",
+    role: "Head of Product",
+    flag: "🇺🇦",
+    company: "Initech"
+  },
+  {
+    quote: "The assessment exposed quick wins. Within weeks we saw fewer incidents and faster releases.",
+    name: "James Kim",
+    role: "DevOps Lead",
+    flag: "🇰🇷",
+    company: "Umbrella"
+  }
 ];
 
 const Testimonials = () => {
-  const { t } = useTranslation();
   const [emblaRef, emblaApi] = useEmblaCarousel(
     { align: 'start', loop: false, dragFree: false, slidesToScroll: 1 },
     [Autoplay({ delay: 5000, stopOnInteraction: false })]
   );
-  const [prevDisabled, setPrevDisabled] = React.useState(true);
-  const [nextDisabled, setNextDisabled] = React.useState(true);
-
-  const onSelect = React.useCallback(() => {
-    if (!emblaApi) return;
-    setPrevDisabled(!emblaApi.canScrollPrev());
-    setNextDisabled(!emblaApi.canScrollNext());
-  }, [emblaApi]);
-
-  React.useEffect(() => {
-    if (!emblaApi) return;
-    onSelect();
-    emblaApi.on('select', onSelect);
-    emblaApi.on('reInit', onSelect);
-  }, [emblaApi, onSelect]);
 
   return (
     <section id="testimonials" className="py-16 lg:py-24 bg-white overflow-x-hidden">
       <div className="container-custom">
         <div className="max-w-2xl">
           <h2 className="text-5xl lg:text-7xl font-bold text-primary mb-2 primary-gradient leading-tight">
-            {t('testimonials.title')}
+            Testimonials
           </h2>
           <p className="text-tertiary text-lg lg:text-xl mb-10">
-            {t('testimonials.subtitle')}
+            Discover how Ten-Factors has transformed software quality for companies of different sizes and industries.
           </p>
         </div>
 
         <div className="relative">
 
-          <div ref={emblaRef} aria-label={t('testimonials.title')}>
+          <div ref={emblaRef} aria-label="Testimonials">
             <div className="flex gap-4 lg:gap-6">
-              {items.map((item) => (
+              {items.map((item, idx) => (
                 <article
-                  key={item.key}
+                  key={idx}
                   className="h-max flex-[0_0_85%] sm:flex-[0_0_70%] md:flex-[0_0_50%] lg:flex-[0_0_40%] xl:flex-[0_0_33%] p-6 primary-shadow rounded-xl bg-white shadow-sm hover:shadow transition-shadow"
                 >
                   <svg
@@ -70,16 +77,16 @@ const Testimonials = () => {
                     </defs>
                   </svg>
 
-                  <blockquote className="text-primary text-lg leading-relaxed mb-6">“{t(`${item.key}.quote`)}”</blockquote>
+                  <blockquote className="text-primary text-lg leading-relaxed mb-6">"{item.quote}"</blockquote>
 
                   <div className="flex items-center gap-3 pt-4 border-t-1 border-gray-300">
                     <div className="h-12 w-12 rounded-full bg-gray-200 flex items-center justify-center text-xl" aria-hidden="true">🧑</div>
                     <div className="min-w-0">
                       <div className="flex items-center gap-2 flex-wrap">
-                        <span className="font-semibold text-primary truncate">{t(`${item.key}.name`)}</span>
-                        <span className="text-lg" aria-hidden="true">{t(`${item.key}.flag`)}</span>
+                        <span className="font-semibold text-primary truncate">{item.name}</span>
+                        <span className="text-lg" aria-hidden="true">{item.flag}</span>
                       </div>
-                      <div className="text-sm text-tertiary truncate">{t(`${item.key}.role`)}</div>
+                      <div className="text-sm text-tertiary truncate">{item.role}</div>
                     </div>
                   </div>
                 </article>

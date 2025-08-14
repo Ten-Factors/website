@@ -1,16 +1,14 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 
-const stepsKeys = [
-  { key: 'usage.steps.1', icon: '1' },
-  { key: 'usage.steps.2', icon: '2' },
-  { key: 'usage.steps.3', icon: '3' },
-  { key: 'usage.steps.4', icon: '4' },
-  { key: 'usage.steps.5', icon: '5' },
+const steps = [
+  { title: 'Answer the questions', desc: 'Complete a short questionnaire across the Ten Factors to evaluate your current practices.' },
+  { title: 'Receive your score', desc: 'Instantly get a detailed score with strengths and areas to improve.' },
+  { title: 'Review best practices', desc: 'Explore actionable recommendations and best practices tailored to your results.' },
+  { title: 'Track improvements', desc: 'Implement changes and track progress over time to continuously improve.' },
+  { title: 'Track improvements', desc: 'Implement changes and track progress over time to continuously improve.' },
 ];
 
 const UsageProcess = () => {
-  const { t } = useTranslation();
   const stepColors = ['#195460', '#286566', '#39766c', '#4e8d74', '#6cad7e'];
 
   return (
@@ -18,17 +16,17 @@ const UsageProcess = () => {
       <div className="container-custom">
         <div className="max-w-2xl">
           <h2 className="text-5xl lg:text-7xl font-bold text-primary mb-2 primary-gradient leading-tight">
-            {t('usage.title')}
+            How it works
           </h2>
           <p className="text-tertiary text-lg lg:text-xl mb-10">
-            {t('usage.subtitle')}
+            Assess, analyze, and improve your software delivery performance in four simple steps.
           </p>
         </div>
 
         {/* Mobile/Tablet layout: numbers left (1..5), descriptions right (1..5) */}
         <div className="grid grid-cols-[auto,1fr] gap-[4px] lg:hidden">
-          {stepsKeys.map((s, idx) => (
-            <React.Fragment key={s.key}>
+          {steps.map((step, idx) => (
+            <React.Fragment key={idx}>
               <div className="flex items-start justify-start pt-1">
                 <div
                   className="flex items-center justify-center rounded-full w-16 h-16 text-white font-bold text-2xl leading-8"
@@ -40,10 +38,10 @@ const UsageProcess = () => {
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-primary tracking-[0.2px] mb-2">
-                  {t(`${s.key}.title`)}
+                  {step.title}
                 </h3>
                 <p className="text-base text-tertiary leading-6">
-                  {t(`${s.key}.desc`)}
+                  {step.desc}
                 </p>
               </div>
             </React.Fragment>
@@ -52,8 +50,8 @@ const UsageProcess = () => {
 
         {/* Desktop layout: horizontal with number first then text, matching Figma spacing */}
         <ol className="hidden lg:flex lg:flex-row lg:items-start lg:gap-6 xl:gap-8">
-          {stepsKeys.map((s, idx) => (
-            <li key={s.key} className="relative box-border flex w-[236px] shrink-0 flex-col items-start gap-10">
+          {steps.map((step, idx) => (
+            <li key={idx} className="relative box-border flex w-[236px] shrink-0 flex-col items-start gap-10">
               <div className="flex items-center justify-center">
                 <div
                   className="flex items-center justify-center rounded-full w-16 h-16 text-white font-bold text-2xl leading-8"
@@ -65,14 +63,14 @@ const UsageProcess = () => {
               </div>
               <div className="flex flex-col gap-3 items-start w-full">
                 <h3 className="text-2xl font-bold text-primary tracking-[0.2px] leading-6">
-                  {t(`${s.key}.title`)}
+                  {step.title}
                 </h3>
                 <p className="text-base text-tertiary leading-6">
-                  {t(`${s.key}.desc`)}
+                  {step.desc}
                 </p>
               </div>
               {/* Optional connector line to hint progression */}
-              {idx < stepsKeys.length - 1 && (
+              {idx < steps.length - 1 && (
                 <div className="absolute left-16 top-[30px] h-1 w-[204px] bg-gradient-to-r from-[#195460] to-[#6cad7e]" aria-hidden />
               )}
             </li>

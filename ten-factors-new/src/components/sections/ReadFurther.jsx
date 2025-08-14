@@ -1,12 +1,17 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 import { ReadFurtherCard } from '../../components';
 
 // Background asset from Figma export
 import imgLayer1 from '../../assets/images/c8f261f91eedfc8b7dcff7261e963d999617b761.svg';
 
+const items = [
+  { title: 'Advantages', desc: 'Discover how Ten-Factors differs from existing solutions', href: '#advantages' },
+  { title: 'Success Stories', desc: 'See how Ten-Factors can supercharge your software quality', href: '#case-studies' },
+  { title: 'Library of Best Practices', desc: 'Explore the catalogue of industry best practices and guidelines', href: '#best-practices' },
+  { title: 'Get Started', desc: 'Begin your journey with Ten-Factors', href: '#cta' },
+];
+
 export default function ReadFurther() {
-  const { t } = useTranslation();
   return (
     <section
       className="container mx-auto px-8 py-20 relative"
@@ -24,32 +29,15 @@ export default function ReadFurther() {
       </div>
 
       {/* Heading */}
-      <h2 className="text-5xl font-bold primary-gradient mb-4">
-        {t('readFurther.title')}
+      <h2 className="text-5xl lg:text-7xl font-bold text-primary mb-2 primary-gradient leading-tight">
+        Read Further
       </h2>
 
       {/* Cards grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <ReadFurtherCard
-          titleKey="readFurther.cards.advantages.title"
-          descKey="readFurther.cards.advantages.desc"
-          href="#advantages"
-        />
-        <ReadFurtherCard
-          titleKey="readFurther.cards.successStories.title"
-          descKey="readFurther.cards.successStories.desc"
-          href="#case-studies"
-        />
-        <ReadFurtherCard
-          titleKey="readFurther.cards.bestPractices.title"
-          descKey="readFurther.cards.bestPractices.desc"
-          href="#best-practices"
-        />
-        <ReadFurtherCard
-          titleKey="readFurther.cards.getStarted.title"
-          descKey="readFurther.cards.getStarted.desc"
-          href="#cta"
-        />
+        {items.map(({ title, desc, href }) => (
+          <ReadFurtherCard key={href} title={title} desc={desc} href={href} />
+        ))}
       </div>
     </section>
   );
