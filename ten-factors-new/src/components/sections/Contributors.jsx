@@ -29,7 +29,7 @@ const Contributors = () => {
       <div className="container-custom">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           <article className="flex flex-col items-center sm:items-start  justify-center">
-            <h2 className="text-5xl lg:text-7xl font-bold text-primary mb-2 primary-gradient leading-tight">
+            <h2 className="text-4xl font-bold text-primary mb-2 primary-gradient leading-tight">
               Contributors
             </h2>
             <p className="text-tertiary text-lg lg:text-xl mb-10">
@@ -40,7 +40,7 @@ const Contributors = () => {
           {Array.isArray(items) && items.map((person, idx) => (
             <article
               key={idx}
-              className="p-5 border border-gray-200 rounded-xl bg-white shadow-sm hover:shadow transition-shadow flex items-center gap-4"
+              className="p-5 rounded-xl bg-white shadow-sm hover:shadow flex items-center gap-4"
             >
               {person.avatar ? (
                 <img
