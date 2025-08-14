@@ -14,22 +14,37 @@ const Footer = () => {
       <div className="container-custom">
         {/* Subscribe to our newsletter */}
         <section className="mb-12">
-          <div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-6 lg:gap-8 p-6 border border-gray-200 rounded-xl bg-white shadow-sm">
-            <div className="lg:col-span-2">
-              <h3 className="text-2xl font-semibold text-primary">Subscribe to our newsletter</h3>
-              <p className="text-tertiary mt-2">Get product updates, best practices, and insights right to your inbox.</p>
+          <div className="flex flex-col gap-6 items-center justify-start p-0 relative w-full max-w-[479px] mx-auto">
+            <div className="flex flex-col gap-2 items-center justify-start text-center w-full">
+              <h3 className="primary-gradient font-bold text-[24px] leading-[32px] text-[#020205] w-full">
+                Subscribe to Our Newsletter
+              </h3>
+              <p className="font-normal text-[16px] leading-[24px] text-[#020205] w-full">
+                Get product updates, best practices, and insights right to your inbox.
+              </p>
             </div>
-            <form onSubmit={onSubscribe} className="w-full flex flex-col sm:flex-row gap-3">
-              <label htmlFor="newsletter-email" className="sr-only">Email address</label>
-              <input
-                id="newsletter-email"
-                name="email"
-                type="email"
-                required
-                placeholder="Enter your email"
-                className="flex-1 min-w-0 px-3 py-2 border border-gray-300 rounded-md text-sm text-primary placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400"
-              />
-              <button type="submit" className="btn-primary">Subscribe</button>
+            <form onSubmit={onSubscribe} className="flex flex-row flex-wrap md:flex-nowrap gap-4 items-center justify-center w-full">
+              <div className="flex flex-col gap-2 items-start justify-start w-[336px] shrink-0">
+                <label htmlFor="newsletter-email" className="sr-only">Email address</label>
+                <div className="relative w-full">
+                  <input
+                    id="newsletter-email"
+                    name="email"
+                    type="email"
+                    required
+                    placeholder="Enter your email"
+                    className="bg-white w-full h-12 px-4 py-3 rounded-[18px] border border-[#c9c0c9] text-[16px] leading-[24px] text-[#020205] placeholder-[#9a9a9b] tracking-[0.2px] focus:outline-none focus:ring-2 focus:ring-[#ffba00] focus:border-[#ffba00]"
+                  />
+                </div>
+              </div>
+              <button 
+                type="submit" 
+                className="bg-[#ffba00] flex items-center justify-center px-6 py-3 rounded-[18px] shrink-0 hover:bg-[#e6a700] transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#ffba00]"
+              >
+                <span className="font-bold text-[18px] leading-[24px] text-[#020205] text-center whitespace-nowrap">
+                  Subscribe
+                </span>
+              </button>
             </form>
           </div>
         </section>
