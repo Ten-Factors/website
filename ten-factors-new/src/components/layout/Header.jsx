@@ -2,12 +2,9 @@ import React from 'react';
 import { useState } from 'react';
 import NavigationLinks from './NavigationLinks';
 import MobileMenu from './MobileMenu';
-import { useTranslation } from 'react-i18next';
-import i18n from '../../i18n';
 
 const Header = () => {
   const [open, setOpen] = useState(false);
-  const { t } = useTranslation();
 
   return (
     <header className="bg-white border-b border-[#c9c0c9] sticky top-0 z-40">
@@ -16,7 +13,7 @@ const Header = () => {
           {/* Logo */}
           <div className="h-[52px] relative shrink-0 w-[70px]">
             <div className="absolute flex flex-col font-semibold justify-center leading-[0] left-[-1.45%] not-italic right-0 text-[#020205] text-[24px] text-center top-1/2 translate-y-[-50%]">
-              <a href="#top" className="block leading-[24px]">{t('brand')}</a>
+              <a href="#top" className="block leading-[24px]">Ten-Factors</a>
             </div>
           </div>
 
@@ -30,14 +27,14 @@ const Header = () => {
               className="bg-[#ffba00] flex items-center justify-center overflow-clip px-6 py-3 rounded-[18px] shrink-0 hidden md:inline-flex hover:bg-[#e6a700] transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#ffba00]"
             >
               <span className="font-medium text-[#020205] text-[18px] text-center text-nowrap leading-[24px]">
-                {t('cta.getScore')}
+                Get Your Score
               </span>
             </a>
 
             {/* Hamburger for mobile */}
             <button
               type="button"
-              aria-label={t('aria.openMenu')}
+              aria-label="Open menu"
               onClick={() => setOpen(true)}
               className="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
             >

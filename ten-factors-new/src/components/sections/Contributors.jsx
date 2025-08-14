@@ -1,5 +1,4 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 
 const InitialsAvatar = ({ name }) => {
   const initials = (name || '?')
@@ -16,19 +15,25 @@ const InitialsAvatar = ({ name }) => {
 };
 
 const Contributors = () => {
-  const { t } = useTranslation();
-  const items = t('contributors.items', { returnObjects: true });
+  const items = [
+    { name: "Roman Rodomansky", role: "Co-Founder", company: "RALABS", avatar: "/src/assets/images/RRodomanskiy.png" },
+    { name: "Daniel Niiaziiev", role: "Head of Engineering", company: "RALABS", avatar: "/src/assets/images/DNiaziev.png" },
+    { name: "Alex Kim", role: "Full‑stack Engineer", company: "Umbrella" },
+    { name: "Maria Garcia", role: "Product Manager", company: "Initech" },
+    { name: "Liam Brown", role: "QA Engineer", company: "Hooli" },
+    { name: "Emma Wilson", role: "Tech Writer", company: "Soylent" }
+  ];
 
   return (
     <section id="contributors" className="py-16 lg:py-24 bg-white">
       <div className="container-custom">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           <article className="flex flex-col items-center sm:items-start  justify-center">
-            <h3 className="text-5xl font-bold primary-gradient mb-2">
-              {t('contributors.title')}
-            </h3>
-            <p className="text-tertiary text-center max-w-md">
-              {t('contributors.subtitle')}
+            <h2 className="text-5xl lg:text-7xl font-bold text-primary mb-2 primary-gradient leading-tight">
+              Contributors
+            </h2>
+            <p className="text-tertiary text-lg lg:text-xl mb-10">
+              People who helped build Ten‑Factors.
             </p>
           </article>
 

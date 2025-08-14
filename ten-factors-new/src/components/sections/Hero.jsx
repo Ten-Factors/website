@@ -1,9 +1,7 @@
 import React from 'react';
 import { IMAGES } from '../../assets/constants';
-import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
-  const { t } = useTranslation();
   return (
     <section className="py-16 lg:py-24 bg-white">
       <div className="container-custom">
@@ -33,7 +31,7 @@ const Hero = () => {
           <div className="flex justify-center">
             <img 
               src={IMAGES.tenFactorsCircle} 
-              alt={t('hero.diagramAlt')} 
+              alt="Ten-Factors circular diagram" 
               className="w-full h-auto object-contain"
             />
           </div>

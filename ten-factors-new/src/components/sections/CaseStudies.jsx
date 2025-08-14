@@ -1,25 +1,32 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 
 const items = [
   {
-    key: 'caseStudies.items.1',
+    company: 'Acme Corp',
+    title: 'Accelerated release cadence',
+    summary: 'By focusing on deployment automation and CI, Acme reduced lead time while increasing quality.'
   },
   {
-    key: 'caseStudies.items.2',
+    company: 'Globex',
+    title: 'Stability and speed together',
+    summary: 'Improved incident response and change management brought fewer failures with quicker recovery.'
   },
   {
-    key: 'caseStudies.items.3',
+    company: 'Initech',
+    title: 'From manual to automated',
+    summary: 'Migrating to trunk-based development and automated tests unlocked consistent delivery.',
+    result: '+50% test coverage'
   },
   {
-    key: 'caseStudies.items.4',
+    company: 'Initech',
+    title: 'From manual to automated',
+    summary: 'Migrating to trunk-based development and automated tests unlocked consistent delivery.'
   },
 ];
 
 const CaseStudies = () => {
-  const { t } = useTranslation();
   const [emblaRef] = useEmblaCarousel(
     { align: 'start', loop: false, dragFree: false, slidesToScroll: 1 },
     [Autoplay({ delay: 4000, stopOnInteraction: false })]
@@ -30,19 +37,19 @@ const CaseStudies = () => {
       <div className="container-custom">
         <div className="max-w-2xl">
           <h2 className="text-5xl lg:text-7xl font-bold text-primary mb-2 primary-gradient leading-tight">
-            {t('caseStudies.title')}
+            Case Studies
           </h2>
           <p className="text-tertiary text-lg lg:text-xl mb-10">
-            {t('caseStudies.subtitle')}
+            See how teams improved their delivery performance with Ten-Factors.
           </p>
         </div>
 
         <div className="relative">
-          <div ref={emblaRef} aria-label={t('caseStudies.title')}>
+          <div ref={emblaRef} aria-label="Case Studies">
             <div className="flex gap-4 lg:gap-6">
-              {items.map((item) => (
+              {items.map((item, idx) => (
                 <article
-                  key={item.key}
+                  key={idx}
                   className="group flex-[0_0_85%] sm:flex-[0_0_70%] md:flex-[0_0_50%] lg:flex-[0_0_40%] xl:flex-[0_0_33%] flex flex-col rounded-3xl bg-white primary-shadow transition-all hover:-translate-y-0.5"
                 >
                   {/* Header / Logo strip */}
@@ -51,8 +58,8 @@ const CaseStudies = () => {
                     <div className="h-full w-full flex items-center justify-center">
                       <div className="w-[221px] h-[80px] bg-white/80 border border-gray-200 rounded-xl flex items-center justify-center">
                         <img
-                          // src={IMAGES[item.key]}
-                          alt={t(`${item.key}.company`)}
+                          // src={IMAGES[item.company]}
+                          alt={item.company}
                           className="max-w-full max-h-full object-contain"
                         />
                       </div>
@@ -63,10 +70,10 @@ const CaseStudies = () => {
                   <div className="flex flex-col gap-4 w-full p-6">
                     <div className="flex flex-col gap-2 text-primary">
                       <h3 className="text-[22px] lg:text-[24px] leading-7 lg:leading-8 tracking-[0.2px] font-semibold">
-                        {t(`${item.key}.title`)}
+                        {item.title}
                       </h3>
                       <p className="text-tertiary text-sm lg:text-base leading-6">
-                        {t(`${item.key}.summary`)}
+                        {item.summary}
                       </p>
                     </div>
 
@@ -74,9 +81,9 @@ const CaseStudies = () => {
                       <a
                         href="#"
                         className="relative block w-full rounded-2xl border border-primary text-primary px-6 py-3 text-center text-sm lg:text-base font-medium hover:opacity-80"
-                        aria-label={t('caseStudies.readMore')}
+                        aria-label="Read more"
                       >
-                        {t('caseStudies.readMore')}
+                        Read more
                       </a>
                     </div>
                   </div>
