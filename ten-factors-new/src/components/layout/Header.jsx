@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import NavigationLinks from './NavigationLinks';
 import MobileMenu from './MobileMenu';
+import { IMAGES } from '../../assets/constants';
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -13,7 +14,9 @@ const Header = () => {
           {/* Logo */}
           <div className="h-[52px] relative shrink-0 w-[70px]">
             <div className="absolute flex flex-col font-semibold justify-center leading-[0] left-[-1.45%] not-italic right-0 text-[#020205] text-[24px] text-center top-1/2 translate-y-[-50%]">
-              <a href="#top" className="block leading-[24px]">Ten-Factors</a>
+              <a href="#top" className="block leading-[24px]">
+                <img src={IMAGES.logo} alt="10-Factors Logo" />
+              </a>
             </div>
           </div>
 

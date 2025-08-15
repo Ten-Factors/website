@@ -16,7 +16,7 @@ const Footer = () => {
         <section className="mb-12">
           <div className="flex flex-col gap-6 items-center justify-start p-0 relative w-full max-w-[479px] mx-auto">
             <div className="flex flex-col gap-2 items-center justify-start text-center w-full">
-              <h3 className="primary-gradient font-bold text-[24px] leading-[32px] text-[#020205] w-full">
+              <h3 className="primary-gradient text-3xl font-bold text-[#020205] w-full">
                 Subscribe to Our Newsletter
               </h3>
               <p className="font-normal text-[16px] leading-[24px] text-[#020205] w-full">

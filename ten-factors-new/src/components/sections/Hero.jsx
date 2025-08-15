@@ -3,32 +3,47 @@ import { IMAGES } from '../../assets/constants';
 
 const Hero = () => {
   return (
-    <section className="py-16 lg:py-24 bg-white">
-      <div className="container-custom">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Left content */}
-          <div>
-            <h1 className="text-5xl lg:text-7xl font-bold text-primary mb-2 primary-gradient leading-tight">
+    <section className="relative w-full lg:h-[828px] bg-white overflow-hidden z-[-1]">
+      {/* Background SVG */}
+      <div 
+        className="absolute z-0 h-[828px] left-1/2 opacity-[0.08] overflow-clip translate-x-[-50%] translate-y-[-50%] w-[100%]"
+        style={{ top: "calc(20%)" }}
+      >
+        <div className="absolute inset-0">
+          <img 
+            src={IMAGES.heroBackground} 
+            alt="" 
+            className="block max-w-none w-full h-full object-cover"
+          />
+        </div>
+      </div>
+
+      <div className="container-custom flex flex-col items-start pt-[24px] justify-between z-1 relative lg:flex-row">
+
+        {/* Content */}
+        <div className="md:w-[519px] flex flex-col lg:pt-[60px] gap-8 items-start justify-start">
+          <div className="flex flex-col gap-2 items-start justify-start w-full">
+            <h1 className="primary-gradient font-bold text-[72px] leading-[72px]">
               Ten Factors
             </h1>
-            <p className="text-xl lg:text-2xl font-medium mb-8 leading-relaxed">
-            Measure and Improve Software Quality
-            </p>
-            <p className="text-lg lg:text-xl leading-relaxed">
-              A practical and scalable framework for measuring and improving software 
-              quality in technology service companies and products/startups. 
-              Ten-Factors help companies to maintain high standards in products, and make data-driven improvements.
+            <p className="font-medium text-[24px] leading-[32px] text-[#020205] min-w-full">
+              Measure and Improve Software Quality
             </p>
           </div>
-          
-          {/* Right content - Placeholder for circular diagram */}
-          <div className="flex justify-center">
-            <img 
-              src={IMAGES.tenFactorsCircle} 
-              alt="Ten-Factors circular diagram" 
-              className="w-full h-auto object-contain"
-            />
+          <div className="flex flex-col gap-3 items-start justify-start w-full">
+            <p className="font-medium text-[16px] leading-[24px] text-[#020205] w-full">
+              A practical and scalable framework for measuring and improving software quality in technology service companies and products/startups. Ten-Factors help companies to maintain high standards in products, and make data-driven improvements.
+            </p>
           </div>
+        </div>
+
+        {/* Circular diagram */}
+        <div className="flex w-auto h-[100%]">
+          <img 
+            src={IMAGES.tenFactorsCircle} 
+            alt="Ten-Factors circular diagram" 
+            className="w-[100%]"
+          />
         </div>
       </div>
     </section>

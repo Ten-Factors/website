@@ -12,19 +12,19 @@ const UsageProcess = () => {
   const stepColors = ['#195460', '#286566', '#39766c', '#4e8d74', '#6cad7e'];
 
   return (
-    <section id="usage-process" className="py-16 lg:py-24 bg-white">
+    <section id="usage-process" className="py-16 lg:py-24 bg-transparent lg:mt-[-350px] xl:mt-[-450px]">
       <div className="container-custom">
         <div className="max-w-2xl">
-          <h2 className="text-5xl lg:text-7xl font-bold text-primary mb-2 primary-gradient leading-tight">
-            How it works
+          <h2 className="text-3xl lg:text-5xl font-bold text-primary mb-2 primary-gradient leading-tight">
+            Usage Process
           </h2>
-          <p className="text-tertiary text-lg lg:text-xl mb-10">
-            Assess, analyze, and improve your software delivery performance in four simple steps.
+          <p className="text-primary text-lg mb-14">
+            Ten-Factors is designed to provide a clear, practical, and scalable approach to quality control in software development. Our approach combines automated metrics with direct team feedback, creating a complete and accurate view of service quality.
           </p>
         </div>
 
         {/* Mobile/Tablet layout: numbers left (1..5), descriptions right (1..5) */}
-        <div className="grid grid-cols-[auto,1fr] gap-[4px] lg:hidden">
+        <div className="grid grid-cols-[auto,1fr] gap-[4px] xl:hidden">
           {steps.map((step, idx) => (
             <React.Fragment key={idx}>
               <div className="flex items-start justify-start pt-1">
@@ -49,7 +49,7 @@ const UsageProcess = () => {
         </div>
 
         {/* Desktop layout: horizontal with number first then text, matching Figma spacing */}
-        <ol className="hidden lg:flex lg:flex-row lg:items-start lg:gap-6 xl:gap-8">
+        <ol className="hidden xl:flex lg:flex-row lg:items-start lg:gap-6 xl:gap-8">
           {steps.map((step, idx) => (
             <li key={idx} className="relative box-border flex w-[236px] shrink-0 flex-col items-start gap-10">
               <div className="flex items-center justify-center">
