@@ -1,4 +1,6 @@
 import React from 'react';
+import romanImage from '../../assets/images/RRodomanskiy.png';
+import danielImage from '../../assets/images/DNiaziev.png';
 
 const InitialsAvatar = ({ name }) => {
   const initials = (name || '?')
@@ -16,8 +18,8 @@ const InitialsAvatar = ({ name }) => {
 
 const Contributors = () => {
   const items = [
-    { name: "Roman Rodomansky", role: "Co-Founder", company: "RALABS", avatar: "/src/assets/images/RRodomanskiy.png" },
-    { name: "Daniel Niiaziiev", role: "Head of Engineering", company: "RALABS", avatar: "/src/assets/images/DNiaziev.png" },
+    { name: "Roman Rodomansky", role: "Co-Founder", company: "RALABS", avatar: romanImage },
+    { name: "Daniel Niiaziiev", role: "Head of Engineering", company: "RALABS", avatar: danielImage },
     { name: "Alex Kim", role: "Full‑stack Engineer", company: "Umbrella" },
     { name: "Maria Garcia", role: "Product Manager", company: "Initech" },
     { name: "Liam Brown", role: "QA Engineer", company: "Hooli" },
