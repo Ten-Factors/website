@@ -31,10 +31,10 @@ const Contributors = () => {
       <div className="container-custom">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           <article className="flex flex-col items-center sm:items-start  justify-center">
-            <h2 className="text-4xl font-bold text-primary mb-2 primary-gradient leading-tight">
+            <h2 className="text-3xl lg:text-5xl font-bold text-primary mb-2 primary-gradient leading-tight">
               Contributors
             </h2>
-            <p className="text-tertiary text-lg lg:text-xl mb-10">
+            <p className="text-primary text-lg mb-10">
               People who helped build Ten‑Factors.
             </p>
           </article>

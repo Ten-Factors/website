@@ -29,7 +29,7 @@ export default function ReadFurther() {
       </div>
 
       {/* Heading */}
-      <h2 className="text-5xl lg:text-7xl font-bold text-primary mb-2 primary-gradient leading-tight">
+      <h2 className="text-3xl lg:text-5xl font-bold text-primary mb-2 primary-gradient leading-tight">
         Read Further
       </h2>
 

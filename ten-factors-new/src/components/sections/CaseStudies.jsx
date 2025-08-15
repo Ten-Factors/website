@@ -36,10 +36,10 @@ const CaseStudies = () => {
     <section id="case-studies" className="py-16 lg:py-24 bg-white overflow-x-hidden">
       <div className="container-custom">
         <div className="max-w-2xl">
-          <h2 className="text-5xl lg:text-7xl font-bold text-primary mb-2 primary-gradient leading-tight">
+          <h2 className="text-3xl lg:text-5xl font-bold text-primary mb-2 primary-gradient leading-tight">
             Case Studies
           </h2>
-          <p className="text-tertiary text-lg lg:text-xl mb-10">
+          <p className="text-primary text-lg mb-10">
             See how teams improved their delivery performance with Ten-Factors.
           </p>
         </div>
