@@ -1,5 +1,6 @@
 // Image and asset constants for the Ten-Factors application
 // These will be populated with actual Figma assets when implementing components
+import tenFactorsCircle from './images/hero-circle.svg';
 
 export const IMAGES = {
   // Logos and branding
@@ -7,7 +8,7 @@ export const IMAGES = {
   // logoWhite: '/src/assets/images/logo-white.svg',
   
   // Hero section
-  tenFactorsCircle: '/src/assets/images/hero-circle.svg',
+  tenFactorsCircle,
   
   // Case studies
   // caseStudy1: '/src/assets/images/case-study-1.png',

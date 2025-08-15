@@ -19,12 +19,6 @@ const Hero = () => {
               quality in technology service companies and products/startups. 
               Ten-Factors help companies to maintain high standards in products, and make data-driven improvements.
             </p>
-            {/* <div className="flex flex-col sm:flex-row gap-4">
-              <button className="btn-primary">Get Started</button>
-              <button className="px-6 py-3 border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition-colors">
-                Learn More
-              </button>
-            </div> */}
           </div>
           
           {/* Right content - Placeholder for circular diagram */}
