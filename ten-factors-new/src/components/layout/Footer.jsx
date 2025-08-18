@@ -1,5 +1,7 @@
 import React from 'react';
 import Newsletter from '../sections/Newsletter';
+import TwitterIcon from '../../assets/twitter-icon.svg';
+import LinkedInIcon from '../../assets/linkedin-icon.svg';
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -7,17 +9,34 @@ const Footer = () => {
   return (
     <footer className="bg-white border-t border-gray-200 py-12" role="contentinfo">
       <div className="container-custom">
-        {/* Subscribe to our newsletter */}
         <Newsletter />
 
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Logo and description */}
-          <div className="col-span-1">
-            <div className="text-xl font-bold text-primary mb-4">Ten-Factors</div>
-            <p className="text-tertiary text-sm">Measure and improve software delivery performance with our comprehensive assessment tool.</p>
+          <div className="col-span-1 inline-flex items-center">
+            <div className="text-lg font-bold text-primary mr-2">Follow Us:</div>
+            
+            <div className="flex items-center gap-2" data-node-id="155:9044">
+              <a
+                href="#"
+                aria-label="Twitter"
+                title="Twitter"
+                rel="noopener noreferrer nofollow"
+                className="primary-gradient-bg w-10 h-10 rounded-xl p-2 flex items-center justify-center overflow-hidden hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary transition"
+              >
+                <img src={TwitterIcon} alt="Twitter" className="w-5 h-5" />
+              </a>
+              <a
+                href="#"
+                aria-label="LinkedIn"
+                title="LinkedIn"
+                rel="noopener noreferrer nofollow"
+                className="primary-gradient-bg w-10 h-10 rounded-xl p-2 flex items-center justify-center overflow-hidden hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-primary transition"
+              >
+                <img src={LinkedInIcon} alt="LinkedIn" className="w-5 h-5" />
+              </a>
+            </div>
           </div>
           
-          {/* Links columns */}
           <nav aria-label="Product">
             <h3 className="font-semibold text-primary mb-4">Product</h3>
             <ul className="space-y-2 text-sm text-tertiary">
@@ -46,7 +65,6 @@ const Footer = () => {
           </nav>
         </div>
         
-        {/* Bottom section */}
         <div className="border-t border-gray-200 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-xs text-tertiary">
             © {year} Ten-Factors. All rights reserved.
