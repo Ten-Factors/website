@@ -12,7 +12,7 @@ const UsageProcess = () => {
   const stepColors = ['#195460', '#286566', '#39766c', '#4e8d74', '#6cad7e'];
 
   return (
-    <section id="usage-process" className="py-16 lg:py-24 bg-transparent lg:mt-[-350px] xl:mt-[-450px]">
+    <section id="usage-process" className="py-16 lg:py-24 bg-transparent xl:mt-[-350px] 2xl:mt-[-450px]">
       <div className="container-custom">
         <div className="max-w-2xl">
           <h2 className="text-3xl lg:text-5xl font-bold text-primary mb-2 primary-gradient leading-tight">

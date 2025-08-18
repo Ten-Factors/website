@@ -3,20 +3,7 @@ import { IMAGES } from '../../assets/constants';
 
 const Hero = () => {
   return (
-    <section className="relative w-full lg:h-[828px] bg-white overflow-hidden z-[-1]">
-      {/* Background SVG */}
-      <div 
-        className="absolute z-0 h-[828px] left-1/2 opacity-[0.08] overflow-clip translate-x-[-50%] translate-y-[-50%] w-[100%]"
-        style={{ top: "calc(20%)" }}
-      >
-        <div className="absolute inset-0">
-          <img 
-            src={IMAGES.heroBackground} 
-            alt="" 
-            className="block max-w-none w-full h-full object-cover"
-          />
-        </div>
-      </div>
+    <section className="relative z-[-1] xl:h-[828px] primary-bg-cover">
 
       <div className="container-custom flex flex-col items-start pt-[24px] justify-between z-1 relative lg:flex-row">
 
