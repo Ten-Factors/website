@@ -14,7 +14,7 @@ export default function ReadFurther() {
       className="primary-bg-cover"
       id="node-118_16688"
     >
-      <div className="container mx-auto px-8 py-20">
+      <div className="relative z-1 container mx-auto px-8 py-20">
         <h2 className="text-3xl lg:text-5xl font-bold text-primary mb-2 primary-gradient leading-tight">
           Read Further
         </h2>
