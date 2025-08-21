@@ -83,7 +83,7 @@ const Testimonials = () => {
                     <div className="h-12 w-12 rounded-full bg-gray-200 flex items-center justify-center text-xl" aria-hidden="true">🧑</div>
                     <div className="min-w-0">
                       <div className="flex items-center gap-2 flex-wrap">
-                        <span className="font-semibold taxt-xl lg:text-2xl font-bold truncate">{item.name}</span>
+                        <span className="font-semibold text-xl lg:text-2xl font-bold truncate">{item.name}</span>
                         <span className="text-lg emoji" aria-hidden="true">{item.flag}</span>
                       </div>
                       <div className="text-base text-tertiary truncate">{item.role}</div>
