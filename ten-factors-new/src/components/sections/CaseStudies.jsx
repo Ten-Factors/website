@@ -5,23 +5,26 @@ import CaseStudiesCard from '../ui/CaseStudiesCard';
 
 const items = [
   {
-    company: 'Acme Corp',
+    company: 'Choosing Therapy',
+    href: './src/assets/images/choosing-therapy.png',
     title: 'Accelerated release cadence',
     summary: 'By focusing on deployment automation and CI, Acme reduced lead time while increasing quality.'
   },
   {
-    company: 'Globex',
+    company: 'MIT',
+    href: './src/assets/images/MIT.png',
     title: 'Stability and speed together',
     summary: 'Improved incident response and change management brought fewer failures with quicker recovery.'
   },
   {
-    company: 'Initech',
+    company: 'CR2',
+    href: './src/assets/images/cr2.png',
     title: 'From manual to automated',
-    summary: 'Migrating to trunk-based development and automated tests unlocked consistent delivery.',
-    result: '+50% test coverage'
+    summary: 'Migrating to trunk-based development and automated tests unlocked consistent delivery.'
   },
   {
     company: 'Initech',
+    href: './src/assets/images/cr2.png',
     title: 'From manual to automated',
     summary: 'Migrating to trunk-based development and automated tests unlocked consistent delivery.'
   },
@@ -41,7 +44,7 @@ const CaseStudies = () => {
             Case Studies
           </h2>
           <p className="text-primary text-lg mb-10">
-            See how teams improved their delivery performance with Ten-Factors.
+            Discover how Ten-Factors has transformed software quality for companies of different sizes and industries.
           </p>
         </div>
 
@@ -49,7 +52,7 @@ const CaseStudies = () => {
           <div ref={emblaRef} aria-label="Case Studies">
             <div className="flex gap-4 lg:gap-6">
               {items.map((item, idx) => (
-                <CaseStudiesCard key={idx} company={item.company} title={item.title} summary={item.summary}/>
+                <CaseStudiesCard key={idx} href={item.href} company={item.company} title={item.title} summary={item.summary}/>
               ))}
             </div>
           </div>

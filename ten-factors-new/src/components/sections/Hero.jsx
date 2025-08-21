@@ -3,9 +3,12 @@ import { IMAGES } from '../../assets/constants';
 
 const Hero = () => {
   return (
-    <section className="relative z-[-1] xl:h-[828px] primary-bg-cover">
+    <section className="relative z-[-1]">
+      <div className="unique-bg lg:bottom-[250px] bg-[#F9F8F9]">
+        <img className="w-[auto] h-[100svh] max-w-[100%] lg:h-[initial] lg:w-[100%]" src={IMAGES.heroBackground} alt="" />
+      </div>
 
-      <div className="container-custom flex flex-col items-start pt-[24px] justify-between z-1 relative lg:flex-row">
+      <div className="container-custom flex gap-4 flex-col items-start pt-[24px] justify-between z-1 relative lg:flex-row">
 
         {/* Content */}
         <div className="md:w-[519px] flex flex-col lg:pt-[60px] gap-8 items-start justify-start">

@@ -1,5 +1,6 @@
 import React from 'react';
 import { ReadFurtherCard } from '../../components';
+import { IMAGES } from '../../assets/constants';
 
 const items = [
   { title: 'Advantages', desc: 'Discover how Ten-Factors differs from existing solutions', href: '#advantages' },
@@ -11,15 +12,19 @@ const items = [
 export default function ReadFurther() {
   return (
     <section
-      className="primary-bg-cover"
+      className="relative"
       id="node-118_16688"
     >
+      <div className="unique-bg">
+        <img src={IMAGES.heroBackground} alt="" />
+      </div>
+      
       <div className="relative z-1 container mx-auto px-8 py-20">
-        <h2 className="text-3xl lg:text-5xl font-bold text-primary mb-2 primary-gradient leading-tight">
+        <h2 className="text-3xl lg:text-5xl font-bold text-primary mb-6 lg:mb-12 primary-gradient leading-tight">
           Read Further
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {items.map(({ title, desc, href }) => (
             <ReadFurtherCard key={href} title={title} desc={desc} href={href} />
           ))}

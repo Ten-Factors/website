@@ -8,10 +8,10 @@ export default function ReadFurtherCard({ title, desc, href = '#' }) {
     >
       <div className="flex flex-col gap-4 items-start justify-start px-10 py-8 w-full">
         <div className="flex flex-col gap-3 items-start text-left text-primary w-full">
-          <h3 className="text-xl font-semibold text-primary mb-2">
+          <h3 className="text-xl font-bold text-primary">
             {title}
           </h3>
-          <p className="text-tertiary text-sm leading-relaxed">
+          <p className="text-base leading-relaxed">
             {desc}
           </p>
         </div>

@@ -43,11 +43,11 @@ const Newsletter = () => {
     <section className="mb-12">
       <div className="flex flex-col gap-6 items-center justify-start p-0 relative w-full max-w-[479px] mx-auto">
         <div className="flex flex-col gap-2 items-center justify-start text-center w-full">
-          <h3 className="primary-gradient text-3xl font-bold text-[#020205] w-full">
+          <h3 className="primary-gradient text-2xl font-bold w-full">
             Subscribe to Our Newsletter
           </h3>
-          <p className="font-normal text-[16px] leading-[24px] text-[#020205] w-full">
-            Get product updates, best practices, and insights right to your inbox.
+          <p className="font-normal text-[16px] leading-[24px] w-full">
+            Morem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.
           </p>
         </div>
 

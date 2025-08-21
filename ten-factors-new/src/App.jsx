@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, Footer, Hero, UsageProcess, CaseStudies, Testimonials, ReadFurther, CTA, Contributors } from './components';
+import { Header, Footer, Hero, Comparisons, UsageProcess, CaseStudies, Testimonials, ReadFurther, CTA } from './components';
 import './styles/globals.css';
 
 function App() {
@@ -9,10 +9,10 @@ function App() {
       <main className="flex-1">
         <Hero />
         <UsageProcess />
+        <Comparisons />
         <CaseStudies />
         <Testimonials />
         <CTA />
-        <Contributors />
         <ReadFurther />
       </main>
       <Footer />

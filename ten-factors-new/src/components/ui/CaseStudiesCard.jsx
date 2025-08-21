@@ -4,18 +4,16 @@ export default function CaseStudiesCard({ company, title, summary, href = '#' })
 				className="group flex-[0_0_85%] sm:flex-[0_0_70%] md:flex-[0_0_50%] lg:flex-[0_0_40%] xl:flex-[0_0_33%] flex flex-col rounded-3xl bg-white primary-shadow transition-all hover:-translate-y-0.5"
 			>
 				{/* Header / Logo strip */}
-				<div className="relative h-64 w-full bg-[#f9f8f9] rounded-t-3xl">
+				<div className="relative h-64 w-full aspect-[411/256] bg-[#f9f8f9] rounded-t-3xl overflow-hidden">
 					<div className="absolute inset-0 border-b border-gray-200 pointer-events-none" aria-hidden="true" />
 					<div className="h-full w-full flex items-center justify-center">
-						<div className="w-[221px] h-[80px] bg-white/80 border border-gray-200 rounded-xl flex items-center justify-center">
+						<div className="w-full">
 							<img
-								// src={IMAGES[item.company]}
+								src={href}
 								alt={company}
-								className="max-w-full max-h-full object-contain"
+								className="h-full w-full object-cover"
 								loading="lazy"
 								decoding="async"
-								// width={221}
-								// height={80}
 							/>
 						</div>
 					</div>
@@ -35,7 +33,7 @@ export default function CaseStudiesCard({ company, title, summary, href = '#' })
 					<div className="mt-2">
 						<a
 							href={href}
-							className="relative block w-full rounded-2xl border border-primary text-primary px-6 py-3 text-center text-sm lg:text-base font-medium hover:opacity-80"
+							className="relative block w-full rounded-2xl border border-primary text-primary px-6 py-3 text-center text-base lg:text-lg font-medium hover:opacity-80"
 							aria-label="Read more"
 						>
 							Read Article
