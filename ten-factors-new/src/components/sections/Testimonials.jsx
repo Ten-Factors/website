@@ -40,7 +40,7 @@ const Testimonials = () => {
   );
 
   return (
-    <section id="testimonials" className="py-16 lg:py-24 bg-white overflow-x-hidden">
+    <section id="testimonials" className="py-16 lg:py-24 bg-[#F9F8F9] overflow-x-hidden">
       <div className="container-custom">
         <div className="max-w-2xl">
           <h2 className="text-3xl lg:text-5xl font-bold text-primary mb-2 primary-gradient leading-tight">
@@ -83,10 +83,10 @@ const Testimonials = () => {
                     <div className="h-12 w-12 rounded-full bg-gray-200 flex items-center justify-center text-xl" aria-hidden="true">🧑</div>
                     <div className="min-w-0">
                       <div className="flex items-center gap-2 flex-wrap">
-                        <span className="font-semibold text-primary truncate">{item.name}</span>
-                        <span className="text-lg" aria-hidden="true">{item.flag}</span>
+                        <span className="font-semibold text-xl lg:text-2xl font-bold truncate">{item.name}</span>
+                        <span className="text-lg emoji" aria-hidden="true">{item.flag}</span>
                       </div>
-                      <div className="text-sm text-tertiary truncate">{item.role}</div>
+                      <div className="text-base text-tertiary truncate">{item.role}</div>
                     </div>
                   </div>
                 </article>

@@ -3,22 +3,12 @@ import { IMAGES } from '../../assets/constants';
 
 const Hero = () => {
   return (
-    <section className="relative w-full lg:h-[828px] bg-white overflow-hidden z-[-1]">
-      {/* Background SVG */}
-      <div 
-        className="absolute z-0 h-[828px] left-1/2 opacity-[0.08] overflow-clip translate-x-[-50%] translate-y-[-50%] w-[100%]"
-        style={{ top: "calc(20%)" }}
-      >
-        <div className="absolute inset-0">
-          <img 
-            src={IMAGES.heroBackground} 
-            alt="" 
-            className="block max-w-none w-full h-full object-cover"
-          />
-        </div>
+    <section className="relative z-[-1]">
+      <div className="unique-bg lg:bottom-[250px] bg-[#F9F8F9]">
+        <img className="w-[auto] h-[100svh] max-w-[100%] lg:h-[initial] lg:w-[100%]" src={IMAGES.heroBackground} alt="" />
       </div>
 
-      <div className="container-custom flex flex-col items-start pt-[24px] justify-between z-1 relative lg:flex-row">
+      <div className="container-custom flex gap-4 flex-col items-start pt-[24px] justify-between z-1 relative lg:flex-row">
 
         {/* Content */}
         <div className="md:w-[519px] flex flex-col lg:pt-[60px] gap-8 items-start justify-start">

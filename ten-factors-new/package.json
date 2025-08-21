@@ -1,4 +1,5 @@
 {
+  "$schema": "https://json.schemastore.org/package",
   "name": "ten-factors-website-new",
   "private": true,
   "version": "0.1.0",

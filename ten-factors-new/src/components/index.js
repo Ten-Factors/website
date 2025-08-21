@@ -10,7 +10,7 @@ export { default as MobileMenu } from './layout/MobileMenu';
 // Section Components
 export { default as Hero } from './sections/Hero';
 export { default as UsageProcess } from './sections/UsageProcess';
-// export { default as Comparison } from './sections/Comparison';
+export { default as Comparisons } from './sections/Comparisons';
 export { default as CaseStudies } from './sections/CaseStudies';
 export { default as Testimonials } from './sections/Testimonials';
 export { default as CTA } from './sections/CTA';

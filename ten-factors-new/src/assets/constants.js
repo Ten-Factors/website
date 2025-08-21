@@ -3,6 +3,9 @@
 import tenFactorsCircle from './images/hero-circle.svg';
 import heroBackground from './images/c8f261f91eedfc8b7dcff7261e963d999617b761.svg';
 import logo from '/logo.svg';
+import choosingTherapy from './images/choosing-therapy.png';
+import mit from './images/MIT.png';
+import cr2 from './images/cr2.png';
 
 export const IMAGES = {
   // Logos and branding
@@ -14,9 +17,9 @@ export const IMAGES = {
   heroBackground,
   
   // Case studies
-  // caseStudy1: '/src/assets/images/case-study-1.png',
-  // caseStudy2: '/src/assets/images/case-study-2.png',
-  // caseStudy3: '/src/assets/images/case-study-3.png',
+  choosingTherapy,
+  mit,
+  cr2,
   
   // // Testimonials
   // reviewer1: '/src/assets/images/reviewer-1.png',
