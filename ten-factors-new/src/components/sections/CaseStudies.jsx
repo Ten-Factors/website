@@ -2,29 +2,30 @@ import React from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import CaseStudiesCard from '../ui/CaseStudiesCard';
+import { IMAGES } from '../../assets/constants';
 
 const items = [
   {
     company: 'Choosing Therapy',
-    href: './src/assets/images/choosing-therapy.png',
+    href: IMAGES.choosingTherapy,
     title: 'Accelerated release cadence',
     summary: 'By focusing on deployment automation and CI, Acme reduced lead time while increasing quality.'
   },
   {
     company: 'MIT',
-    href: './src/assets/images/MIT.png',
+  href:   IMAGES.mit,
     title: 'Stability and speed together',
     summary: 'Improved incident response and change management brought fewer failures with quicker recovery.'
   },
   {
     company: 'CR2',
-    href: './src/assets/images/cr2.png',
+    href: IMAGES.cr2,
     title: 'From manual to automated',
     summary: 'Migrating to trunk-based development and automated tests unlocked consistent delivery.'
   },
   {
     company: 'Initech',
-    href: './src/assets/images/cr2.png',
+    href: IMAGES.cr2,
     title: 'From manual to automated',
     summary: 'Migrating to trunk-based development and automated tests unlocked consistent delivery.'
   },
